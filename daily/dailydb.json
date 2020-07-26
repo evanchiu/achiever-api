@@ -1,0 +1,1388 @@
+{
+  "437": {
+    "id": 437,
+    "name": "Daily Mists Guard Killer",
+    "description": "You took down the enemy's guards in the Mists.",
+    "minutes": 8
+  },
+  "500": {
+    "id": 500,
+    "name": "Daily Mystic Forger",
+    "description": "Zommoros is pleased.",
+    "minutes": 1
+  },
+  "946": {
+    "id": 946,
+    "name": "Daily WvW Master of Monuments",
+    "description": "",
+    "minutes": 3
+  },
+  "1837": {
+    "id": 1837,
+    "name": "Daily Ascalon Lumberer",
+    "description": "Fueling the engines of the economy.",
+    "minutes": 5
+  },
+  "1838": {
+    "id": 1838,
+    "name": "Daily Ascalon Forager",
+    "description": "Fueling the engines of the economy.",
+    "minutes": 5
+  },
+  "1839": {
+    "id": 1839,
+    "name": "Daily Kryta Vista Viewer",
+    "description": "Always on the lookout for a good view.",
+    "minutes": 1
+  },
+  "1843": {
+    "id": 1843,
+    "name": "Daily WvW Tower Capturer",
+    "description": "",
+    "minutes": 20
+  },
+  "1844": {
+    "id": 1844,
+    "name": "Daily WvW Objective Defender",
+    "description": "",
+    "minutes": 20
+  },
+  "1845": {
+    "id": 1845,
+    "name": "Daily WvW Keep Capturer",
+    "description": "",
+    "minutes": 60
+  },
+  "1846": {
+    "id": 1846,
+    "name": "Daily WvW Invasion Defender",
+    "description": "Not in my castle.",
+    "minutes": 20
+  },
+  "1847": {
+    "id": 1847,
+    "name": "Daily WvW Caravan Disruptor",
+    "description": "Cut off the enemy supply chain in the Mists.",
+    "minutes": 5
+  },
+  "1848": {
+    "id": 1848,
+    "name": "Daily WvW Veteran Creature Slayer",
+    "description": "",
+    "minutes": 20
+  },
+  "1849": {
+    "id": 1849,
+    "name": "Daily WvW Land Claimer",
+    "description": "",
+    "minutes": 10
+  },
+  "1850": {
+    "id": 1850,
+    "name": "Daily WvW Camp Capturer",
+    "description": "",
+    "minutes": 10
+  },
+  "1851": {
+    "id": 1851,
+    "name": "Daily WvW World Ranker",
+    "description": "",
+    "minutes": 30
+  },
+  "1852": {
+    "id": 1852,
+    "name": "Daily WvW Big Spender",
+    "description": "",
+    "minutes": 1
+  },
+  "1856": {
+    "id": 1856,
+    "name": "Daily PvP Reward Earner",
+    "description": "",
+    "minutes": 1
+  },
+  "1857": {
+    "id": 1857,
+    "name": "Daily PvP Rank Points",
+    "description": "",
+    "minutes": 15
+  },
+  "1858": {
+    "id": 1858,
+    "name": "Daily PvP Defender",
+    "description": "",
+    "minutes": 15
+  },
+  "1859": {
+    "id": 1859,
+    "name": "Daily Thief Winner",
+    "description": "",
+    "minutes": 30
+  },
+  "1860": {
+    "id": 1860,
+    "name": "Daily Ranger Winner",
+    "description": "",
+    "minutes": 30
+  },
+  "1861": {
+    "id": 1861,
+    "name": "Daily PvP Player Kills",
+    "description": "Maybe they'll stay down today.",
+    "minutes": 30
+  },
+  "1862": {
+    "id": 1862,
+    "name": "Daily Necromancer Winner",
+    "description": "",
+    "minutes": 30
+  },
+  "1863": {
+    "id": 1863,
+    "name": "Daily Elementalist Winner",
+    "description": "",
+    "minutes": 30
+  },
+  "1864": {
+    "id": 1864,
+    "name": "Daily Mesmer Winner",
+    "description": "",
+    "minutes": 30
+  },
+  "1865": {
+    "id": 1865,
+    "name": "Daily Engineer Winner",
+    "description": "",
+    "minutes": 30
+  },
+  "1866": {
+    "id": 1866,
+    "name": "Daily Warrior Winner",
+    "description": "",
+    "minutes": 30
+  },
+  "1867": {
+    "id": 1867,
+    "name": "Daily PvP Capture",
+    "description": "This looks like a nice spot for a picnic.",
+    "minutes": 5
+  },
+  "1871": {
+    "id": 1871,
+    "name": "Daily Guardian Winner",
+    "description": "",
+    "minutes": 30
+  },
+  "1872": {
+    "id": 1872,
+    "name": "Daily The Long Way Around Minidungeon",
+    "description": "",
+    "minutes": 30
+  },
+  "1873": {
+    "id": 1873,
+    "name": "Daily Forgotten Stream Minidungeon",
+    "description": "",
+    "minutes": 5
+  },
+  "1874": {
+    "id": 1874,
+    "name": "Daily Goff's Loot Minidungeon",
+    "description": "",
+    "minutes": 8
+  },
+  "1875": {
+    "id": 1875,
+    "name": "Daily Tears of Itlaocol Minidungeon",
+    "description": "",
+    "minutes": 15
+  },
+  "1876": {
+    "id": 1876,
+    "name": "Daily Rebel's Seclusion Minidungeon",
+    "description": "",
+    "minutes": 30
+  },
+  "1877": {
+    "id": 1877,
+    "name": "Daily Windy Cave Treasure Minidungeon",
+    "description": "",
+    "minutes": 30
+  },
+  "1878": {
+    "id": 1878,
+    "name": "Daily Magellan's Memento Minidungeon",
+    "description": "",
+    "minutes": 20
+  },
+  "1879": {
+    "id": 1879,
+    "name": "Daily Ship of Sorrows Minidungeon",
+    "description": "",
+    "minutes": 6
+  },
+  "1880": {
+    "id": 1880,
+    "name": "Daily Grounded Minidungeon",
+    "description": "",
+    "minutes": 20
+  },
+  "1881": {
+    "id": 1881,
+    "name": "Daily Don't Touch the Shiny Minidungeon",
+    "description": "",
+    "minutes": 20
+  },
+  "1882": {
+    "id": 1882,
+    "name": "Daily Bad Neighborhood Minidungeon",
+    "description": "",
+    "minutes": 6
+  },
+  "1883": {
+    "id": 1883,
+    "name": "Daily Forsaken Fortune Minidungeon",
+    "description": "",
+    "minutes": 30
+  },
+  "1884": {
+    "id": 1884,
+    "name": "Daily Vexa's Lab Minidungeon",
+    "description": "",
+    "minutes": 30
+  },
+  "1885": {
+    "id": 1885,
+    "name": "Daily Craze's Folly Jumping Puzzle",
+    "description": "",
+    "minutes": 20
+  },
+  "1886": {
+    "id": 1886,
+    "name": "Daily Chaos Crystal Cavern Jumping Puzzle",
+    "description": "",
+    "minutes": 20
+  },
+  "1887": {
+    "id": 1887,
+    "name": "Daily Portmatt's Lab Jumping Puzzle",
+    "description": "",
+    "minutes": 30
+  },
+  "1888": {
+    "id": 1888,
+    "name": "Daily Goemm's Lab Jumping Puzzle",
+    "description": "",
+    "minutes": 30
+  },
+  "1889": {
+    "id": 1889,
+    "name": "Daily Urmaug's Secret Jumping Puzzle",
+    "description": "",
+    "minutes": 6
+  },
+  "1890": {
+    "id": 1890,
+    "name": "Daily Branded Mine Jumping Puzzle",
+    "description": "",
+    "minutes": 10
+  },
+  "1891": {
+    "id": 1891,
+    "name": "Daily Behem Gauntlet Jumping Puzzle",
+    "description": "",
+    "minutes": 15
+  },
+  "1892": {
+    "id": 1892,
+    "name": "Daily Collapsed Observatory Jumping Puzzle",
+    "description": "",
+    "minutes": 30
+  },
+  "1893": {
+    "id": 1893,
+    "name": "Daily Antre of Adjournment Jumping Puzzle",
+    "description": "",
+    "minutes": 30
+  },
+  "1894": {
+    "id": 1894,
+    "name": "Daily Skipping Stones Jumping Puzzle",
+    "description": "",
+    "minutes": 30
+  },
+  "1895": {
+    "id": 1895,
+    "name": "Daily Shaman's Rookery Jumping Puzzle",
+    "description": "",
+    "minutes": 5
+  },
+  "1896": {
+    "id": 1896,
+    "name": "Daily Shattered Ice Ruins Jumping Puzzle",
+    "description": "",
+    "minutes": 20
+  },
+  "1897": {
+    "id": 1897,
+    "name": "Daily Scavenger's Chasm Jumping Puzzle",
+    "description": "",
+    "minutes": 120
+  },
+  "1898": {
+    "id": 1898,
+    "name": "Daily Spelunker's Delve Jumping Puzzle",
+    "description": "",
+    "minutes": 15
+  },
+  "1899": {
+    "id": 1899,
+    "name": "Daily Swashbuckler's Cove Jumping Puzzle",
+    "description": "",
+    "minutes": 30
+  },
+  "1900": {
+    "id": 1900,
+    "name": "Daily Only Zuhl Jumping Puzzle",
+    "description": "",
+    "minutes": 20
+  },
+  "1901": {
+    "id": 1901,
+    "name": "Daily Hidden Garden Jumping Puzzle",
+    "description": "",
+    "minutes": 60
+  },
+  "1902": {
+    "id": 1902,
+    "name": "Daily Loreclaw Expanse Jumping Puzzle",
+    "description": "",
+    "minutes": 30
+  },
+  "1904": {
+    "id": 1904,
+    "name": "Daily King Jalis's Refuge Jumping Puzzle",
+    "description": "",
+    "minutes": 15
+  },
+  "1905": {
+    "id": 1905,
+    "name": "Daily Griffonrook Run Jumping Puzzle",
+    "description": "",
+    "minutes": 30
+  },
+  "1906": {
+    "id": 1906,
+    "name": "Daily Grendich Gamble Jumping Puzzle",
+    "description": "",
+    "minutes": 8
+  },
+  "1907": {
+    "id": 1907,
+    "name": "Daily Conundrum Cubed Jumping Puzzle",
+    "description": "",
+    "minutes": 30
+  },
+  "1908": {
+    "id": 1908,
+    "name": "Daily Coddler's Cove Jumping Puzzle",
+    "description": "",
+    "minutes": 45
+  },
+  "1909": {
+    "id": 1909,
+    "name": "Daily Hexfoundry Jumping Puzzle",
+    "description": "",
+    "minutes": 30
+  },
+  "1910": {
+    "id": 1910,
+    "name": "Daily Fawcett's Bounty Jumping Puzzle",
+    "description": "",
+    "minutes": 20
+  },
+  "1912": {
+    "id": 1912,
+    "name": "Daily Spekks's Lab Jumping Puzzle",
+    "description": "",
+    "minutes": 8
+  },
+  "1913": {
+    "id": 1913,
+    "name": "Daily Dark Reverie Jumping Puzzle",
+    "description": "",
+    "minutes": 40
+  },
+  "1914": {
+    "id": 1914,
+    "name": "Daily Crimson Plateau Jumping Puzzle",
+    "description": "",
+    "minutes": 20
+  },
+  "1915": {
+    "id": 1915,
+    "name": "Daily Tribulation Caverns Jumping Puzzle",
+    "description": "",
+    "minutes": 30
+  },
+  "1916": {
+    "id": 1916,
+    "name": "Daily Tribulation Rift Jumping Puzzle",
+    "description": "",
+    "minutes": 30
+  },
+  "1917": {
+    "id": 1917,
+    "name": "Daily Under New Management Jumping Puzzle",
+    "description": "",
+    "minutes": 8
+  },
+  "1918": {
+    "id": 1918,
+    "name": "Daily Vizier's Tower Jumping Puzzle",
+    "description": "",
+    "minutes": 15
+  },
+  "1919": {
+    "id": 1919,
+    "name": "Daily Buried Archives Jumping Puzzle",
+    "description": "",
+    "minutes": 20
+  },
+  "1920": {
+    "id": 1920,
+    "name": "Daily Wall Breach Blitz Jumping Puzzle",
+    "description": "",
+    "minutes": 15
+  },
+  "1923": {
+    "id": 1923,
+    "name": "Daily Weyandt's Revenge Jumping Puzzle",
+    "description": "",
+    "minutes": 40
+  },
+  "1924": {
+    "id": 1924,
+    "name": "Daily Crash Site Jumping Puzzle",
+    "description": "",
+    "minutes": 20
+  },
+  "1926": {
+    "id": 1926,
+    "name": "Daily Demongrub Pits Jumping Puzzle",
+    "description": "",
+    "minutes": 15
+  },
+  "1927": {
+    "id": 1927,
+    "name": "Daily Pig Iron Quarry Jumping Puzzle",
+    "description": "",
+    "minutes": 15
+  },
+  "1929": {
+    "id": 1929,
+    "name": "Daily Morgan's Leap Jumping Puzzle",
+    "description": "",
+    "minutes": 15
+  },
+  "1930": {
+    "id": 1930,
+    "name": "Daily Fire Elemental",
+    "description": "",
+    "minutes": 20
+  },
+  "1931": {
+    "id": 1931,
+    "name": "Daily Maguuma Vista Viewer",
+    "description": "Always on the lookout for a good view.",
+    "minutes": 1
+  },
+  "1932": {
+    "id": 1932,
+    "name": "Daily Orr Vista Viewer",
+    "description": "Always on the lookout for a good view.",
+    "minutes": 1
+  },
+  "1933": {
+    "id": 1933,
+    "name": "Daily Great Jungle Wurm",
+    "description": "",
+    "minutes": 20
+  },
+  "1934": {
+    "id": 1934,
+    "name": "Daily Inquest Golem Mark II",
+    "description": "",
+    "minutes": 20
+  },
+  "1935": {
+    "id": 1935,
+    "name": "Daily Megadestroyer",
+    "description": "",
+    "minutes": 20
+  },
+  "1936": {
+    "id": 1936,
+    "name": "Daily Shiverpeaks Vista Viewer",
+    "description": "Always on the lookout for a good view.",
+    "minutes": 1
+  },
+  "1937": {
+    "id": 1937,
+    "name": "Daily Maguuma Wastes Vista Viewer",
+    "description": "Always on the lookout for a good view.",
+    "minutes": 1
+  },
+  "1938": {
+    "id": 1938,
+    "name": "Daily Ascalon Vista Viewer",
+    "description": "Always on the lookout for a good view.",
+    "minutes": 1
+  },
+  "1939": {
+    "id": 1939,
+    "name": "Daily Activity Participation",
+    "description": "Get those bodies moving.",
+    "minutes": 10
+  },
+  "1940": {
+    "id": 1940,
+    "name": "Daily Caledon Forest Event Completer",
+    "description": "Scour the mountains.",
+    "minutes": 20
+  },
+  "1941": {
+    "id": 1941,
+    "name": "Daily Cursed Shore Event Completer",
+    "description": "Scour the mountains.",
+    "minutes": 20
+  },
+  "1942": {
+    "id": 1942,
+    "name": "Daily Straits of Devastation Event Completer",
+    "description": "Scour the mountains.",
+    "minutes": 20
+  },
+  "1943": {
+    "id": 1943,
+    "name": "Daily Gendarran Fields Event Completer",
+    "description": "Scour the mountains.",
+    "minutes": 20
+  },
+  "1944": {
+    "id": 1944,
+    "name": "Daily Frostgorge Sound Event Completer",
+    "description": "Scour the mountains.",
+    "minutes": 20
+  },
+  "1945": {
+    "id": 1945,
+    "name": "Daily Brisban Wildlands Event Completer",
+    "description": "Scour the mountains.",
+    "minutes": 20
+  },
+  "1946": {
+    "id": 1946,
+    "name": "Daily Blazeridge Steppes Event Completer",
+    "description": "Scour the mountains.",
+    "minutes": 20
+  },
+  "1947": {
+    "id": 1947,
+    "name": "Daily Sparkfly Fen Event Completer",
+    "description": "Scour the mountains.",
+    "minutes": 20
+  },
+  "1948": {
+    "id": 1948,
+    "name": "Daily Bloodtide Coast Event Completer",
+    "description": "Scour the mountains.",
+    "minutes": 20
+  },
+  "1949": {
+    "id": 1949,
+    "name": "Daily Southsun Cove Event Completer",
+    "description": "Scour the mountains.",
+    "minutes": 20
+  },
+  "1950": {
+    "id": 1950,
+    "name": "Daily Mount Maelstrom Event Completer",
+    "description": "Scour the mountains.",
+    "minutes": 20
+  },
+  "1951": {
+    "id": 1951,
+    "name": "Daily Metrica Province Event Completer",
+    "description": "Scour the mountains.",
+    "minutes": 20
+  },
+  "1952": {
+    "id": 1952,
+    "name": "Daily Fields of Ruin Event Completer",
+    "description": "Scour the mountains.",
+    "minutes": 20
+  },
+  "1953": {
+    "id": 1953,
+    "name": "Daily Wayfarer Foothills Event Completer",
+    "description": "Scour the mountains.",
+    "minutes": 20
+  },
+  "1954": {
+    "id": 1954,
+    "name": "Daily Timberline Falls Event Completer",
+    "description": "Scour the mountains.",
+    "minutes": 20
+  },
+  "1955": {
+    "id": 1955,
+    "name": "Daily Dry Top Event Completer",
+    "description": "Scour the mountains.",
+    "minutes": 20
+  },
+  "1956": {
+    "id": 1956,
+    "name": "Daily Snowden Drifts Event Completer",
+    "description": "Scour the mountains.",
+    "minutes": 20
+  },
+  "1957": {
+    "id": 1957,
+    "name": "Daily Lornar's Pass Event Completer",
+    "description": "Scour the mountains.",
+    "minutes": 20
+  },
+  "1958": {
+    "id": 1958,
+    "name": "Daily Dredgehaunt Cliffs Event Completer",
+    "description": "Scour the mountains.",
+    "minutes": 20
+  },
+  "1959": {
+    "id": 1959,
+    "name": "Daily Silverwastes Event Completer",
+    "description": "Scour the mountains.",
+    "minutes": 20
+  },
+  "1960": {
+    "id": 1960,
+    "name": "Daily Harathi Hinterlands Event Completer",
+    "description": "Scour the mountains.",
+    "minutes": 20
+  },
+  "1961": {
+    "id": 1961,
+    "name": "Daily Malchor's Leap Event Completer",
+    "description": "Scour the mountains.",
+    "minutes": 20
+  },
+  "1962": {
+    "id": 1962,
+    "name": "Daily Iron Marches Event Completer",
+    "description": "Scour the mountains.",
+    "minutes": 20
+  },
+  "1963": {
+    "id": 1963,
+    "name": "Daily Queensdale Event Completer",
+    "description": "Scour the mountains.",
+    "minutes": 20
+  },
+  "1964": {
+    "id": 1964,
+    "name": "Daily Plains of Ashford Event Completer",
+    "description": "Scour the mountains.",
+    "minutes": 20
+  },
+  "1965": {
+    "id": 1965,
+    "name": "Daily Kessex Hills Event Completer",
+    "description": "Scour the mountains.",
+    "minutes": 20
+  },
+  "1966": {
+    "id": 1966,
+    "name": "Daily Fireheart Rise Event Completer",
+    "description": "Scour the mountains.",
+    "minutes": 20
+  },
+  "1967": {
+    "id": 1967,
+    "name": "Daily Diessa Plateau Event Completer",
+    "description": "Scour the mountains.",
+    "minutes": 20
+  },
+  "1968": {
+    "id": 1968,
+    "name": "Daily Shiverpeaks Lumberer",
+    "description": "Fueling the engines of the economy.",
+    "minutes": 5
+  },
+  "1969": {
+    "id": 1969,
+    "name": "Daily Maguuma Jungle Miner",
+    "description": "Fueling the engines of the economy.",
+    "minutes": 5
+  },
+  "1970": {
+    "id": 1970,
+    "name": "Daily Maguuma Jungle Lumberer",
+    "description": "Fueling the engines of the economy.",
+    "minutes": 5
+  },
+  "1971": {
+    "id": 1971,
+    "name": "Daily Kryta Miner",
+    "description": "Fueling the engines of the economy.",
+    "minutes": 5
+  },
+  "1972": {
+    "id": 1972,
+    "name": "Daily Kryta Lumberer",
+    "description": "Fueling the engines of the economy.",
+    "minutes": 5
+  },
+  "1973": {
+    "id": 1973,
+    "name": "Daily Maguuma Jungle Forager",
+    "description": "Fueling the engines of the economy.",
+    "minutes": 5
+  },
+  "1974": {
+    "id": 1974,
+    "name": "Daily Orr Forager",
+    "description": "Fueling the engines of the economy.",
+    "minutes": 5
+  },
+  "1975": {
+    "id": 1975,
+    "name": "Daily Kryta Forager",
+    "description": "Fueling the engines of the economy.",
+    "minutes": 5
+  },
+  "1976": {
+    "id": 1976,
+    "name": "Daily Orr Lumberer",
+    "description": "Fueling the engines of the economy.",
+    "minutes": 5
+  },
+  "1977": {
+    "id": 1977,
+    "name": "Daily Orr Miner",
+    "description": "Fueling the engines of the economy.",
+    "minutes": 5
+  },
+  "1978": {
+    "id": 1978,
+    "name": "Daily Maguuma Wastes Miner",
+    "description": "Fueling the engines of the economy.",
+    "minutes": 5
+  },
+  "1979": {
+    "id": 1979,
+    "name": "Daily Maguuma Wastes Lumberer",
+    "description": "Fueling the engines of the economy.",
+    "minutes": 5
+  },
+  "1980": {
+    "id": 1980,
+    "name": "Daily Maguuma Wastes Forager",
+    "description": "Fueling the engines of the economy.",
+    "minutes": 5
+  },
+  "1981": {
+    "id": 1981,
+    "name": "Daily Ascalon Miner",
+    "description": "Fueling the engines of the economy.",
+    "minutes": 5
+  },
+  "1983": {
+    "id": 1983,
+    "name": "Daily Shatterer",
+    "description": "",
+    "minutes": 30
+  },
+  "1984": {
+    "id": 1984,
+    "name": "Daily Shiverpeaks Miner",
+    "description": "Fueling the engines of the economy.",
+    "minutes": 5
+  },
+  "1985": {
+    "id": 1985,
+    "name": "Daily Shiverpeaks Forager",
+    "description": "Fueling the engines of the economy.",
+    "minutes": 5
+  },
+  "1986": {
+    "id": 1986,
+    "name": "Daily Scale 11–20 Fractal",
+    "description": "",
+    "minutes": 15
+  },
+  "1987": {
+    "id": 1987,
+    "name": "Daily Scale 1–10 Fractal",
+    "description": "",
+    "minutes": 15
+  },
+  "1989": {
+    "id": 1989,
+    "name": "Daily Fractal",
+    "description": "",
+    "minutes": 20
+  },
+  "1990": {
+    "id": 1990,
+    "name": "Daily Scale 31–40 Fractal",
+    "description": "",
+    "minutes": 15
+  },
+  "1991": {
+    "id": 1991,
+    "name": "Daily Scale 21–30 Fractal",
+    "description": "",
+    "minutes": 15
+  },
+  "2022": {
+    "id": 2022,
+    "name": "Daily Frozen Maw",
+    "description": "",
+    "minutes": 10
+  },
+  "2025": {
+    "id": 2025,
+    "name": "Daily Shadow Behemoth",
+    "description": "",
+    "minutes": 10
+  },
+  "2026": {
+    "id": 2026,
+    "name": "Daily Claw of Jormag",
+    "description": "",
+    "minutes": 30
+  },
+  "2079": {
+    "id": 2079,
+    "name": "A Sparkling Demonstration",
+    "description": "",
+    "minutes": 5
+  },
+  "2080": {
+    "id": 2080,
+    "name": "Dragon Ball Participant",
+    "description": "",
+    "minutes": 30
+  },
+  "2081": {
+    "id": 2081,
+    "name": "Finding Fortune",
+    "description": "",
+    "minutes": 1
+  },
+  "2082": {
+    "id": 2082,
+    "name": "Dragon Ball Boss",
+    "description": "Count yourself among the elite of the Dragon Ball.",
+    "minutes": 60
+  },
+  "2090": {
+    "id": 2090,
+    "name": "Daily Engineer or Thief Winner",
+    "description": "",
+    "minutes": 30
+  },
+  "2091": {
+    "id": 2091,
+    "name": "Daily Mesmer or Necromancer Winner",
+    "description": "",
+    "minutes": 30
+  },
+  "2093": {
+    "id": 2093,
+    "name": "Daily Guardian or Engineer Winner",
+    "description": "",
+    "minutes": 30
+  },
+  "2094": {
+    "id": 2094,
+    "name": "Daily Guardian or Necromancer Winner",
+    "description": "",
+    "minutes": 30
+  },
+  "2096": {
+    "id": 2096,
+    "name": "Daily Warrior or Guardian Winner",
+    "description": "",
+    "minutes": 30
+  },
+  "2097": {
+    "id": 2097,
+    "name": "Daily Warrior or Necromancer Winner",
+    "description": "",
+    "minutes": 30
+  },
+  "2098": {
+    "id": 2098,
+    "name": "Daily Guardian or Ranger Winner",
+    "description": "",
+    "minutes": 30
+  },
+  "2099": {
+    "id": 2099,
+    "name": "Daily Ranger or Mesmer Winner",
+    "description": "",
+    "minutes": 30
+  },
+  "2100": {
+    "id": 2100,
+    "name": "Daily Warrior or Thief Winner",
+    "description": "",
+    "minutes": 30
+  },
+  "2101": {
+    "id": 2101,
+    "name": "Daily Thief or Elementalist Winner",
+    "description": "",
+    "minutes": 30
+  },
+  "2102": {
+    "id": 2102,
+    "name": "Daily Thief or Mesmer Winner",
+    "description": "",
+    "minutes": 30
+  },
+  "2103": {
+    "id": 2103,
+    "name": "Daily Ranger or Engineer Winner",
+    "description": "",
+    "minutes": 30
+  },
+  "2104": {
+    "id": 2104,
+    "name": "Daily Elementalist or Mesmer Winner",
+    "description": "",
+    "minutes": 30
+  },
+  "2105": {
+    "id": 2105,
+    "name": "Daily Guardian or Elementalist Winner",
+    "description": "",
+    "minutes": 30
+  },
+  "2107": {
+    "id": 2107,
+    "name": "Daily Engineer or Elementalist Winner",
+    "description": "",
+    "minutes": 30
+  },
+  "2108": {
+    "id": 2108,
+    "name": "Daily Elementalist or Necromancer Winner",
+    "description": "",
+    "minutes": 30
+  },
+  "2109": {
+    "id": 2109,
+    "name": "Daily Engineer or Mesmer Winner",
+    "description": "",
+    "minutes": 30
+  },
+  "2110": {
+    "id": 2110,
+    "name": "Daily Guardian or Thief Winner",
+    "description": "",
+    "minutes": 30
+  },
+  "2111": {
+    "id": 2111,
+    "name": "Daily Warrior or Ranger Winner",
+    "description": "",
+    "minutes": 30
+  },
+  "2112": {
+    "id": 2112,
+    "name": "Daily Elementalist or Ranger Winner",
+    "description": "",
+    "minutes": 30
+  },
+  "2113": {
+    "id": 2113,
+    "name": "Daily Guardian or Mesmer Winner",
+    "description": "",
+    "minutes": 30
+  },
+  "2114": {
+    "id": 2114,
+    "name": "Daily Warrior or Engineer Winner",
+    "description": "",
+    "minutes": 30
+  },
+  "2115": {
+    "id": 2115,
+    "name": "Daily Ranger or Thief Winner",
+    "description": "",
+    "minutes": 30
+  },
+  "2116": {
+    "id": 2116,
+    "name": "Daily Warrior or Mesmer Winner",
+    "description": "",
+    "minutes": 30
+  },
+  "2117": {
+    "id": 2117,
+    "name": "Daily Ranger or Necromancer Winner",
+    "description": "",
+    "minutes": 30
+  },
+  "2118": {
+    "id": 2118,
+    "name": "Daily Engineer or Necromancer Winner",
+    "description": "",
+    "minutes": 30
+  },
+  "2120": {
+    "id": 2120,
+    "name": "Daily Thief or Necromancer Winner",
+    "description": "",
+    "minutes": 30
+  },
+  "2122": {
+    "id": 2122,
+    "name": "Daily Warrior or Elementalist Winner",
+    "description": "",
+    "minutes": 30
+  },
+  "2153": {
+    "id": 2153,
+    "name": "Daily Recommended Fractal—Scale 11",
+    "description": "",
+    "minutes": 20
+  },
+  "2162": {
+    "id": 2162,
+    "name": "Daily Revenant or Ranger Winner",
+    "description": "",
+    "minutes": 30
+  },
+  "2166": {
+    "id": 2166,
+    "name": "Daily Recommended Fractal—Scale 29",
+    "description": "",
+    "minutes": 20
+  },
+  "2171": {
+    "id": 2171,
+    "name": "Daily Recommended Fractal—Scale 40",
+    "description": "",
+    "minutes": 30
+  },
+  "2189": {
+    "id": 2189,
+    "name": "Daily Recommended Fractal—Scale 21",
+    "description": "",
+    "minutes": 20
+  },
+  "2191": {
+    "id": 2191,
+    "name": "Daily Fractal Adept",
+    "description": "",
+    "minutes": 20
+  },
+  "2623": {
+    "id": 2623,
+    "name": "Daily Revenant or Mesmer Winner",
+    "description": "",
+    "minutes": 30
+  },
+  "2816": {
+    "id": 2816,
+    "name": "Daily PvP Matches Played in Unranked or Ranked Arena",
+    "description": "Win or lose, you see it through to the end.",
+    "minutes": 15
+  },
+  "2817": {
+    "id": 2817,
+    "name": "Daily Top Stats",
+    "description": "There's more than one way to contribute. You find the one that works.",
+    "minutes": 15
+  },
+  "2891": {
+    "id": 2891,
+    "name": "Daily Adventure: Flying Circus",
+    "description": "",
+    "minutes": 5
+  },
+  "2893": {
+    "id": 2893,
+    "name": "Daily Ascalonian Catacombs",
+    "description": "",
+    "minutes": 30
+  },
+  "2901": {
+    "id": 2901,
+    "name": "Daily Citadel of Flame",
+    "description": "",
+    "minutes": 10
+  },
+  "2905": {
+    "id": 2905,
+    "name": "Daily Adventure: Drone Race",
+    "description": "",
+    "minutes": 5
+  },
+  "2910": {
+    "id": 2910,
+    "name": "Daily Auric Basin Event Completer",
+    "description": "Looking for a lost city of gold.",
+    "minutes": 20
+  },
+  "2912": {
+    "id": 2912,
+    "name": "Daily Heart of Maguuma Forager",
+    "description": "Fueling the engines of the economy.",
+    "minutes": 5
+  },
+  "2914": {
+    "id": 2914,
+    "name": "Daily Caudecus's Manor",
+    "description": "",
+    "minutes": 30
+  },
+  "2915": {
+    "id": 2915,
+    "name": "Daily Adventure: Fallen Masks",
+    "description": "",
+    "minutes": 5
+  },
+  "2917": {
+    "id": 2917,
+    "name": "Daily Sorrow's Embrace",
+    "description": "",
+    "minutes": 30
+  },
+  "2922": {
+    "id": 2922,
+    "name": "Daily Adventure: Haywire Punch-o-Matic Battle",
+    "description": "",
+    "minutes": 5
+  },
+  "2924": {
+    "id": 2924,
+    "name": "Daily Dragon's Stand Event Completer",
+    "description": "Hunting all the dragon minions.",
+    "minutes": 60
+  },
+  "2931": {
+    "id": 2931,
+    "name": "Daily Honor of the Waves",
+    "description": "",
+    "minutes": 20
+  },
+  "2936": {
+    "id": 2936,
+    "name": "Daily Adventure: Tendril Torchers",
+    "description": "",
+    "minutes": 5
+  },
+  "2937": {
+    "id": 2937,
+    "name": "Daily Heart of Maguuma Lumberer",
+    "description": "Fueling the engines of the economy.",
+    "minutes": 5
+  },
+  "2938": {
+    "id": 2938,
+    "name": "Daily Ruined City of Arah",
+    "description": "",
+    "minutes": 45
+  },
+  "2942": {
+    "id": 2942,
+    "name": "Daily Adventure: The Floor Is Lava?",
+    "description": "",
+    "minutes": 10
+  },
+  "2945": {
+    "id": 2945,
+    "name": "Daily Verdant Brink Event Completer",
+    "description": "Scour the tree tops.",
+    "minutes": 20
+  },
+  "2953": {
+    "id": 2953,
+    "name": "Daily Crucible of Eternity",
+    "description": "",
+    "minutes": 20
+  },
+  "2957": {
+    "id": 2957,
+    "name": "Daily Heart of Maguuma Miner",
+    "description": "Fueling the engines of the economy.",
+    "minutes": 5
+  },
+  "2959": {
+    "id": 2959,
+    "name": "Daily Twilight Arbor",
+    "description": "",
+    "minutes": 20
+  },
+  "2960": {
+    "id": 2960,
+    "name": "Daily Adventure: The Ley-Line Run",
+    "description": "",
+    "minutes": 10
+  },
+  "2968": {
+    "id": 2968,
+    "name": "Daily Tangled Depths Event Completer",
+    "description": "Untangling the depths.",
+    "minutes": 30
+  },
+  "2969": {
+    "id": 2969,
+    "name": "Daily Adventure: Sanctum Scramble",
+    "description": "",
+    "minutes": 5
+  },
+  "2975": {
+    "id": 2975,
+    "name": "Daily Adventure: Bugs in the Branches",
+    "description": "",
+    "minutes": 5
+  },
+  "2980": {
+    "id": 2980,
+    "name": "Daily Adventure: A Fungus Among Us",
+    "description": "",
+    "minutes": 5
+  },
+  "2983": {
+    "id": 2983,
+    "name": "Daily Heart of Maguuma Vista Viewer",
+    "description": "Always on the lookout for a good view.",
+    "minutes": 1
+  },
+  "2984": {
+    "id": 2984,
+    "name": "Daily Adventure: On Wings of Gold",
+    "description": "",
+    "minutes": 5
+  },
+  "2987": {
+    "id": 2987,
+    "name": "Daily Adventure: Shooting Gallery",
+    "description": "",
+    "minutes": 5
+  },
+  "2988": {
+    "id": 2988,
+    "name": "Daily Adventure: Scrap Rifle Field Test",
+    "description": "",
+    "minutes": 10
+  },
+  "3449": {
+    "id": 3449,
+    "name": "Daily PvP Rated Game Winner",
+    "description": "",
+    "minutes": 30
+  },
+  "3450": {
+    "id": 3450,
+    "name": "Daily PvP Tournament Participator",
+    "description": "Climb that ladder!",
+    "minutes": 15
+  },
+  "3554": {
+    "id": 3554,
+    "name": "Daily Vabbi Event Completer",
+    "description": "May Joko guide your sword!",
+    "minutes": 30
+  },
+  "3562": {
+    "id": 3562,
+    "name": "Daily Vabbian Bounty Hunter",
+    "description": "Just a matter of time...",
+    "minutes": 10
+  },
+  "3607": {
+    "id": 3607,
+    "name": "Daily Demolisher",
+    "description": "",
+    "minutes": 30
+  },
+  "3626": {
+    "id": 3626,
+    "name": "Daily Crystal Oasis Bounty Hunter",
+    "description": "Hot on the trail...",
+    "minutes": 10
+  },
+  "3661": {
+    "id": 3661,
+    "name": "Daily Elon Riverlands Event Completer",
+    "description": "Go with the flow.",
+    "minutes": 30
+  },
+  "3721": {
+    "id": 3721,
+    "name": "Daily Desert Vista Viewer",
+    "description": "Always on the lookout for a good view.",
+    "minutes": 1
+  },
+  "3722": {
+    "id": 3722,
+    "name": "Daily Elon Riverlands Bounty Hunter",
+    "description": "Gonna getcha!",
+    "minutes": 10
+  },
+  "3760": {
+    "id": 3760,
+    "name": "Daily Desert Forager",
+    "description": "Fueling the engines of the economy.",
+    "minutes": 4
+  },
+  "3779": {
+    "id": 3779,
+    "name": "Daily Desolation Bounty Hunter",
+    "description": "Here I come.",
+    "minutes": 10
+  },
+  "3784": {
+    "id": 3784,
+    "name": "Daily Desert Highlands Bounty Hunter",
+    "description": "Target locked.",
+    "minutes": 10
+  },
+  "3793": {
+    "id": 3793,
+    "name": "Daily Crystal Oasis Event Completer",
+    "description": "Sift the sands.",
+    "minutes": 30
+  },
+  "3814": {
+    "id": 3814,
+    "name": "Daily Desert Highlands Event Completer",
+    "description": "Hop to it.",
+    "minutes": 20
+  },
+  "3866": {
+    "id": 3866,
+    "name": "Daily Desolation Event Completer",
+    "description": "What a waste...",
+    "minutes": 30
+  },
+  "3880": {
+    "id": 3880,
+    "name": "Daily Desert Lumberer",
+    "description": "Fueling the engines of the economy.",
+    "minutes": 4
+  },
+  "3888": {
+    "id": 3888,
+    "name": "Daily Desert Miner",
+    "description": "Fueling the engines of the economy.",
+    "minutes": 4
+  }
+}

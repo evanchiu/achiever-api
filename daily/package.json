@@ -1,0 +1,21 @@
+{
+  "name": "daily",
+  "version": "0.0.1",
+  "description": "Augmented Guild Wars 2 daily API",
+  "repository": "https://github.com/evanchiu/achiever-api",
+  "license": "Apache-2.0",
+  "files": [
+    "*.js",
+    "dailydb.json"
+  ],
+  "dependencies": {
+    "axios": "^0.18.0"
+  },
+  "scripts": {
+    "test": "mocha tests/unit/"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4"
+  }
+}
