@@ -11,16 +11,17 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Build
+      - name: NPM ci
+        run: cd daily && npm ci
+      - name: SAM Build
         run: sam build
   test:
-    name: Test Daily
+    name: Test /daily
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Test
-        run: |
-          cd daily
-          npm install
-          npm test
+      - name: NPM ci
+        run: cd daily && npm ci
+      - name: NPM Test
+        run: cd daily && npm test
