@@ -2,14 +2,23 @@ const axios = require("axios");
 const fs = require("fs");
 const path = require("path");
 
+// Days available
+const TODAY = 0;
+const TOMORROW = 1;
+
+const gw2api = [
+  "https://api.guildwars2.com/v2/achievements/daily?v=2019-05-16T00:00:00.000Z",
+  "https://api.guildwars2.com/v2/achievements/daily/tomorrow?v=2019-05-16T00:00:00.000Z",
+];
+
 // load dailydb from disk
 const basePath = process.env.LAMBDA_TASK_ROOT || ".";
 const dbPath = path.join(basePath, "dailydb.json");
 const dailyDb = JSON.parse(fs.readFileSync(dbPath, { encoding: "utf8" }));
 
 // global achievements and retrieval times
-let retrievalTime;
-let achievements;
+let retrievalTime = [false, false];
+let achievements = [false, false];
 
 /**
  *
@@ -24,17 +33,20 @@ let achievements;
  *
  */
 exports.handler = async (event, context) => {
-  if (shouldReload()) {
-    retrievalTime = new Date();
-    achievements = await getAchievements();
+  const day = event.path === "/daily" ? TODAY : TOMORROW;
+
+  if (shouldReload(day)) {
+    retrievalTime[day] = new Date();
+    achievements[day] = await getAchievements(day);
   }
+
   const response = {
     statusCode: 200,
     headers: {
       "content-type": "application/json",
       "access-control-allow-origin": "*",
     },
-    body: JSON.stringify(achievements),
+    body: JSON.stringify(achievements[day]),
   };
 
   return response;
@@ -43,13 +55,9 @@ exports.handler = async (event, context) => {
 /**
  * Get list of achivements by combining GW2 API results with dailyDb
  */
-async function getAchievements() {
+async function getAchievements(day) {
   // Load list of daily achievements
-  const daily = (
-    await axios.get(
-      "https://api.guildwars2.com/v2/achievements/daily?v=2019-05-16T00:00:00.000Z&lang=en"
-    )
-  ).data;
+  const daily = (await axios.get(gw2api[day])).data;
 
   // Query achivement details
   const ids = Object.keys(daily)
@@ -90,10 +98,11 @@ async function getAchievements() {
  * We should reload if there's no retrieval time or
  * the last retrieval time was a different date in UTC
  */
-function shouldReload() {
+function shouldReload(day) {
   const now = new Date();
   return (
-    !retrievalTime ||
-    now.toISOString().substr(0, 10) != retrievalTime.toISOString().substr(0, 10)
+    !retrievalTime[day] ||
+    now.toISOString().substr(0, 10) !=
+      retrievalTime[day].toISOString().substr(0, 10)
   );
 }

@@ -17,10 +17,15 @@ Resources:
       Handler: daily.handler
       Runtime: nodejs12.x
       Events:
-        root:
+        today:
           Type: Api
           Properties:
             Path: /daily
+            Method: get
+        tomorrow:
+          Type: Api
+          Properties:
+            Path: /daily/tomorrow
             Method: get
 
 Outputs:
