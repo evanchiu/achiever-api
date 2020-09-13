@@ -1,0 +1,26 @@
+name: Validate
+on:
+  push:
+    branches-ignore:
+      - master
+
+jobs:
+  build:
+    name: SAM Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Build
+        run: sam build
+  test:
+    name: Test Daily
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Test
+        run: |
+          cd daily
+          npm install
+          npm test
