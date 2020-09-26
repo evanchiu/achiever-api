@@ -1163,6 +1163,12 @@
     "criterion": "",
     "minutes": 30
   },
+  "2919": {
+    "id": 2919,
+    "name": "Daily Adventure: Salvage Pit",
+    "description": "",
+    "minutes": 5
+  },
   "2922": {
     "id": 2922,
     "name": "Daily Adventure: Haywire Punch-o-Matic Battle",
@@ -1247,6 +1253,12 @@
     "criterion": "",
     "minutes": 5
   },
+  "2973": {
+    "id": 2973,
+    "name": "Daily Adventure: Beetle Feast",
+    "description": "",
+    "minutes": 10
+  },
   "2975": {
     "id": 2975,
     "name": "Daily Adventure: Bugs in the Branches",
@@ -1306,6 +1318,12 @@
     "name": "Daily Vabbian Bounty Hunter",
     "criterion": "Kill one bounty",
     "minutes": 10
+  },
+  "3589": {
+    "id": 3589,
+    "name": "Daily Hound Master",
+    "description": "",
+    "minutes": 15
   },
   "3607": {
     "id": 3607,
