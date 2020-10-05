@@ -21,19 +21,41 @@
     "id": 1837,
     "name": "Daily Ascalon Lumberer",
     "criterion": "Log ten resources",
-    "minutes": 5
+    "minutes": 1,
+    "locations": [
+      {
+        "location": "Apostate Waypoint — [&BB0CAAA=]",
+        "notes": "There are usually quite a few trees in the area around the waypoint."
+      }
+    ]
   },
   "1838": {
     "id": 1838,
     "name": "Daily Ascalon Forager",
     "criterion": "Forage four resources",
-    "minutes": 5
+    "minutes": 1,
+    "locations": [
+      {
+        "location": "Loreclaw Waypoint — [&BMcDAAA=]",
+        "notes": "Potato patch to the south"
+      }
+    ]
   },
   "1839": {
     "id": 1839,
     "name": "Daily Kryta Vista Viewer",
     "criterion": "View one vista",
-    "minutes": 1
+    "minutes": 1,
+    "locations": [
+      {
+        "location": "Beetletun Waypoint — [&BPoAAAA=]",
+        "notes": "To the southeast"
+      },
+      {
+        "location": "Krytan Waypoint — [&BPgAAAA=]",
+        "notes": "West, up the hill."
+      }
+    ]
   },
   "1843": {
     "id": 1843,
@@ -495,13 +517,37 @@
     "id": 1931,
     "name": "Daily Maguuma Vista Viewer",
     "criterion": "View one vista",
-    "minutes": 1
+    "minutes": 1,
+    "locations": [
+      {
+        "location": "Apprentice Waypoint — [&BLcEAAA=]",
+        "notes": "North, jump up from the north side of the structure."
+      },
+      {
+        "location": "Upper Commons Waypoint — [&BLoEAAA=]",
+        "notes": "Just run northeast, no jumping required."
+      }
+    ]
   },
   "1932": {
     "id": 1932,
     "name": "Daily Orr Vista Viewer",
     "criterion": "View one vista",
-    "minutes": 1
+    "minutes": 1,
+    "locations": [
+      {
+        "location": "Fort Trinity Waypoint — [&BO4CAAA=]",
+        "notes": "To the west, on the airship prow"
+      },
+      {
+        "location": "Gavbeorn's Waypoint — [&BBoDAAA=]",
+        "notes": "Up the wooden tower and coral. Easy with springer. Waypoint is sometimes contested."
+      },
+      {
+        "location": "Camp Reclamation Waypoint — [&BO8JAAA=]",
+        "notes": "Living World Season 3 One Path Ends required. Very quick up the south tower with a springer. Otherwise the Fort Trinity one is faster."
+      }
+    ]
   },
   "1933": {
     "id": 1933,
@@ -525,19 +571,37 @@
     "id": 1936,
     "name": "Daily Shiverpeaks Vista Viewer",
     "criterion": "View one vista",
-    "minutes": 1
+    "minutes": 1,
+    "locations": [
+      {
+        "location": "Southern Watchpost Waypoint — [&BI4DAAA=]",
+        "notes": "North, one jump"
+      }
+    ]
   },
   "1937": {
     "id": 1937,
     "name": "Daily Maguuma Wastes Vista Viewer",
     "criterion": "View one vista",
-    "minutes": 1
+    "minutes": 1,
+    "locations": [
+      {
+        "location": "Camp Resolve Waypoint — [&BH8HAAA=]",
+        "notes": "On top of the buildings to the west"
+      }
+    ]
   },
   "1938": {
     "id": 1938,
     "name": "Daily Ascalon Vista Viewer",
     "criterion": "View one vista",
-    "minutes": 1
+    "minutes": 1,
+    "locations": [
+      {
+        "location": "Memorial Waypoint — [&BKYDAAA=]",
+        "notes": "To the northeast"
+      }
+    ]
   },
   "1939": {
     "id": 1939,
@@ -717,85 +781,197 @@
     "id": 1968,
     "name": "Daily Shiverpeaks Lumberer",
     "criterion": "Log ten resources",
-    "minutes": 5
+    "minutes": 1,
+    "locations": [
+      {
+        "location": "Gyre Rapids Waypoint — [&BEsCAAA=]",
+        "notes": "Usually some trees around here"
+      },
+      {
+        "location": "Serpent Waypoint — [&BEUCAAA=]",
+        "notes": "Up to four trees around the waypoint, handy when previous point is not sufficient"
+      }
+    ]
   },
   "1969": {
     "id": 1969,
     "name": "Daily Maguuma Jungle Miner",
     "criterion": "Mine ten resources",
-    "minutes": 5
+    "minutes": 1,
+    "locations": [
+      {
+        "location": "Gallowfields Waypoint — [&BGMAAAA=]",
+        "notes": "Rich Iron to the west, halfway down the canyon"
+      }
+    ]
   },
   "1970": {
     "id": 1970,
     "name": "Daily Maguuma Jungle Lumberer",
     "criterion": "Log ten resources",
-    "minutes": 5
+    "minutes": 1,
+    "locations": [
+      {
+        "location": "Broken Arrow Waypoint — [&BNACAAA=]",
+        "notes": "Usually a fair bunch of trees between this waypoint and  Ashen Waypoint — [&BM4CAAA=]."
+      }
+    ]
   },
   "1971": {
     "id": 1971,
     "name": "Daily Kryta Miner",
     "criterion": "Mine ten resources",
-    "minutes": 5
+    "minutes": 1,
+    "locations": [
+      {
+        "location": "Cereboth Waypoint — [&BBIAAAA=]",
+        "notes": "Rich node, either Iron or Silver, in the cave at the bottom of the waterfall to the north"
+      },
+      {
+        "location": "Phinney Waypoint — [&BPMAAAA=]",
+        "notes": "Run north, Rich Copper Vein under the hill with Ettin."
+      }
+    ]
   },
   "1972": {
     "id": 1972,
     "name": "Daily Kryta Lumberer",
     "criterion": "Log ten resources",
-    "minutes": 5
+    "minutes": 1,
+    "locations": [
+      {
+        "location": "Wynchona Rally Point Waypoint — [&BKgAAAA=]",
+        "notes": "There is always a lot of trees around this waypoint, especially to East"
+      },
+      {
+        "location": "Arcallion Waypoint — [&BMMAAAA=]",
+        "notes": "Go South out the cave and West, there is usually a lot of trees."
+      }
+    ]
   },
   "1973": {
     "id": 1973,
     "name": "Daily Maguuma Jungle Forager",
     "criterion": "Forage four resources",
-    "minutes": 5
+    "minutes": 1,
+    "locations": [
+      {
+        "location": "Akk Wilds Waypoint — [&BEIAAAA=]",
+        "notes": "To the North is a platform with a farm"
+      },
+      {
+        "location": "Kraitbane Haven Waypoint — [&BEABAAA=]",
+        "notes": "A field of lettuce northwest of the waypoint, in The Rowanwoods."
+      }
+    ]
   },
   "1974": {
     "id": 1974,
     "name": "Daily Orr Forager",
     "criterion": "Forage four resources",
-    "minutes": 5
+    "minutes": 1,
+    "locations": [
+      {
+        "location": "Camp Reclamation Waypoint — [&BO8JAAA=]",
+        "notes": "Living World Season 3 One Path Ends required. Oysters and coral in the ocean north of the waypoint and below Pilaster Rock."
+      },
+      {
+        "location": "Plinth Timberland Waypoint — [&BFgGAAA=]",
+        "notes": "Several nodes south. There is a patch of 8 Artichokes to the northeast."
+      }
+    ]
   },
   "1975": {
     "id": 1975,
     "name": "Daily Kryta Forager",
     "criterion": "Forage four resources",
-    "minutes": 5
+    "minutes": 1,
+    "locations": [
+      {
+        "location": "Beetletun Waypoint — [&BPoAAAA=]",
+        "notes": "Run south, there are lettuce patches in the fields there."
+      }
+    ]
   },
   "1976": {
     "id": 1976,
     "name": "Daily Orr Lumberer",
     "criterion": "Log ten resources",
-    "minutes": 5
+    "minutes": 1,
+    "locations": [
+      {
+        "location": "Pagga's Waypoint — [&BKYCAAA=]",
+        "notes": "West there are loads of trees near the statue of Melandru"
+      }
+    ]
   },
   "1977": {
     "id": 1977,
     "name": "Daily Orr Miner",
     "criterion": "Mine ten resources",
-    "minutes": 5
+    "minutes": 1,
+    "locations": [
+      {
+        "location": "Waste Hollows Waypoint — [&BKgCAAA=]",
+        "notes": "Sometimes there is a Rich Mithril to the north, on the rock sticking out of the water"
+      },
+      {
+        "location": "Plinth Timberland Waypoint — [&BFgGAAA=]",
+        "notes": "Mithril nodes to the south all the way to  Thunderhead Waypoint — [&BPACAAA=]. (There might be some in the Lightfoot Passage cave too.)"
+      }
+    ]
   },
   "1978": {
     "id": 1978,
     "name": "Daily Maguuma Wastes Miner",
     "criterion": "Mine ten resources",
-    "minutes": 5
+    "minutes": 1,
+    "locations": [
+      {
+        "location": "Camp Resolve Waypoint — [&BH8HAAA=]",
+        "notes": "Follow the south path west, usually a rich node near the Vinewrath area."
+      },
+      {
+        "location": "Prosperity Waypoint — [&BHoHAAA=]",
+        "notes": "Many Mithril and Quartz nodes to the south."
+      }
+    ]
   },
   "1979": {
     "id": 1979,
     "name": "Daily Maguuma Wastes Lumberer",
     "criterion": "Log ten resources",
-    "minutes": 5
+    "minutes": 1,
+    "locations": [
+      {
+        "location": "Camp Resolve Waypoint — [&BH8HAAA=]",
+        "notes": "No particular area, but follow the south path and look beyond the Red Rock Bastion."
+      }
+    ]
   },
   "1980": {
     "id": 1980,
     "name": "Daily Maguuma Wastes Forager",
     "criterion": "Forage four resources",
-    "minutes": 5
+    "minutes": 1,
+    "locations": [
+      {
+        "location": "Vine Bridge Waypoint — [&BIYHAAA=]",
+        "notes": "North, at the skritt farm"
+      }
+    ]
   },
   "1981": {
     "id": 1981,
     "name": "Daily Ascalon Miner",
     "criterion": "Mine ten resources",
-    "minutes": 5
+    "minutes": 1,
+    "locations": [
+      {
+        "location": "Helliot Mine Waypoint — [&BEsBAAA=]",
+        "notes": "Rich iron above and to the south"
+      }
+    ]
   },
   "1983": {
     "id": 1983,
@@ -807,13 +983,37 @@
     "id": 1984,
     "name": "Daily Shiverpeaks Miner",
     "criterion": "Mine ten resources",
-    "minutes": 5
+    "minutes": 1,
+    "locations": [
+      {
+        "location": "Valance Tutory Waypoint — [&BEwCAAA=]",
+        "notes": "There is a Rich Platinum Vein in an underwater cave west of the defunct  Thistlereed Waypoint — [&BFECAAA=]."
+      },
+      {
+        "location": "Snowhawk Landing Waypoint — [&BL8AAAA=]",
+        "notes": "A lot of nodes south and a Rich Iron Vein in cave."
+      }
+    ]
   },
   "1985": {
     "id": 1985,
     "name": "Daily Shiverpeaks Forager",
     "criterion": "Forage four resources",
-    "minutes": 5
+    "minutes": 1,
+    "locations": [
+      {
+        "location": "Sorrow's Eclipse Waypoint — [&BH0JAAA=]",
+        "notes": "Living World Season 3 A Crack in the Ice required. Fresh Winterberries to the northwest"
+      },
+      {
+        "location": "Demon's Maw Waypoint — [&BOYAAAA=]",
+        "notes": "Run north, 7 permanent grape nodes west of Greybeard's Landing."
+      },
+      {
+        "location": "Valance Tutory Waypoint — [&BEwCAAA=]",
+        "notes": "There is a patch of 8 Cauliflower nodes on the mountainside west of the defunct  Thistlereed Waypoint — [&BFECAAA=]."
+      }
+    ]
   },
   "1986": {
     "id": 1986,
@@ -1143,7 +1343,13 @@
     "id": 2912,
     "name": "Daily Heart of Maguuma Forager",
     "criterion": "Forage four resources",
-    "minutes": 5
+    "minutes": 1,
+    "locations": [
+      {
+        "location": "Jaka Itzel Waypoint — [&BOAHAAA=]",
+        "notes": "Jump off the platform north of the waypoint, then fall and glide to the northeast-east, while avoiding the branches. Deep below, on the ground level there are 8 permanent Flax nodes."
+      }
+    ]
   },
   "2914": {
     "id": 2914,
@@ -1275,7 +1481,13 @@
     "id": 2983,
     "name": "Daily Heart of Maguuma Vista Viewer",
     "criterion": "View one vista",
-    "minutes": 1
+    "minutes": 1,
+    "locations": [
+      {
+        "location": "Jaka Itzel Waypoint — [&BOAHAAA=]",
+        "notes": "Next to the waypoint. Just climb the branch, you don't actually need to jump to the Vista."
+      }
+    ]
   },
   "2984": {
     "id": 2984,
@@ -1347,7 +1559,17 @@
     "id": 3721,
     "name": "Daily Desert Vista Viewer",
     "criterion": "View one vista",
-    "minutes": 1
+    "minutes": 1,
+    "locations": [
+      {
+        "location": "Amnoon Waypoint — [&BLsKAAA=]",
+        "notes": "South, much quicker to reach with Springer."
+      },
+      {
+        "location": "Temple of Kormir Waypoint — [&BEAKAAA=]",
+        "notes": "West on the scaffolding."
+      }
+    ]
   },
   "3722": {
     "id": 3722,
@@ -1359,7 +1581,21 @@
     "id": 3760,
     "name": "Daily Desert Forager",
     "criterion": "Forage four resources",
-    "minutes": 4
+    "minutes": 1,
+    "locations": [
+      {
+        "location": "Temple of Kormir Waypoint — [&BEAKAAA=]",
+        "notes": "North, jump into the canyon and try to avoid the Hydras."
+      },
+      {
+        "location": "Brightwater Waypoint — [&BJEKAAA=]",
+        "notes": "6 Strawberry nodes above the small waterfall in the north end of the Pricklepatch Hollow cave."
+      },
+      {
+        "location": "Augury's Shadow Waypoint — [&BFMKAAA=]",
+        "notes": "Various plant nodes around the waypoint and First Camp."
+      }
+    ]
   },
   "3779": {
     "id": 3779,
@@ -1395,12 +1631,28 @@
     "id": 3880,
     "name": "Daily Desert Lumberer",
     "criterion": "Log ten resources",
-    "minutes": 4
+    "minutes": 1,
+    "locations": [
+      {
+        "location": "Highjump Ranch Waypoint — [&BJ0KAAA=]",
+        "notes": "No particular area, walk around the area in a circle"
+      }
+    ]
   },
   "3888": {
     "id": 3888,
     "name": "Daily Desert Miner",
     "criterion": "Mine ten resources",
-    "minutes": 4
+    "minutes": 1,
+    "locations": [
+      {
+        "location": "Augury's Shadow Waypoint — [&BFMKAAA=]",
+        "notes": "Head east to the  Help Adisa collect Slivers of Vlast from veteran Branded (80) Heart. Mine any regular nodes, but also destroy the Brand Battleshards. Upon destruction they become gathering nodes that count toward the daily."
+      },
+      {
+        "location": "Destiny's Gorge Waypoint — [&BJMKAAA=]",
+        "notes": "On the cliffs above the waypoint and further east towards Fortunate Strike mine. Springer mount will be useful to get there quickly."
+      }
+    ]
   }
 }
