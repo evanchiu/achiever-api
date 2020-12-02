@@ -10,8 +10,17 @@ gw2api[days.TODAY] =
 gw2api[days.TOMORROW] =
   "https://api.guildwars2.com/v2/achievements/daily/tomorrow?v=2019-05-16T00:00:00.000Z";
 
-// Module store dailyDb
+// Global dailyDb, load lazily
 let dailyDb;
+
+/**
+ * Load dailyDb from disk
+ */
+function loadDailyDb() {
+  const basePath = process.env.LAMBDA_TASK_ROOT || ".";
+  const dbPath = path.join(basePath, "daily-db.json");
+  dailyDb = JSON.parse(fs.readFileSync(dbPath, { encoding: "utf8" }));
+}
 
 /**
  * Get list of achievements by combining GW2 API results with dailyDb
@@ -60,14 +69,6 @@ async function getAchievements(day) {
     .flat();
 }
 
-/**
- * Load dailyDb from disk
- */
-function loadDailyDb() {
-  const basePath = process.env.LAMBDA_TASK_ROOT || ".";
-  const dbPath = path.join(basePath, "dailydb.json");
-  dailyDb = JSON.parse(fs.readFileSync(dbPath, { encoding: "utf8" }));
-}
 
 module.exports = {
   getAchievements,
