@@ -1,5 +1,6 @@
 const days = require("./days");
 const daily = require("./daily");
+const strike = require("./strike");
 
 // global achievements and retrieval times
 const retrievalTime = {};
@@ -42,8 +43,10 @@ exports.handler = async (event) => {
  */
 async function getResponses(day) {
   const dailyAchievements = await daily.getAchievements(day);
+  const dailyStrike = strike.getStrike(day);
   return {
     daily: dailyAchievements,
+    strike: dailyStrike,
   };
 }
 
