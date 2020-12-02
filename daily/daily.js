@@ -1,65 +1,31 @@
 const axios = require("axios");
 const fs = require("fs");
 const path = require("path");
+const days = require("./days");
 
-// Days available
-const TODAY = 0;
-const TOMORROW = 1;
+// API endpoints for today and tomorrow
+const gw2api = {};
+gw2api[days.TODAY] =
+  "https://api.guildwars2.com/v2/achievements/daily?v=2019-05-16T00:00:00.000Z";
+gw2api[days.TOMORROW] =
+  "https://api.guildwars2.com/v2/achievements/daily/tomorrow?v=2019-05-16T00:00:00.000Z";
 
-const gw2api = [
-  "https://api.guildwars2.com/v2/achievements/daily?v=2019-05-16T00:00:00.000Z",
-  "https://api.guildwars2.com/v2/achievements/daily/tomorrow?v=2019-05-16T00:00:00.000Z",
-];
-
-// load dailydb from disk
-const basePath = process.env.LAMBDA_TASK_ROOT || ".";
-const dbPath = path.join(basePath, "dailydb.json");
-const dailyDb = JSON.parse(fs.readFileSync(dbPath, { encoding: "utf8" }));
-
-// global achievements and retrieval times
-let retrievalTime = [false, false];
-let achievements = [false, false];
+// Module store dailyDb
+let dailyDb;
 
 /**
- *
- * Event doc: https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-lambda-proxy-integrations.html#api-gateway-simple-proxy-for-lambda-input-format
- * @param {Object} event - API Gateway Lambda Proxy Input Format
- *
- * Context doc: https://docs.aws.amazon.com/lambda/latest/dg/nodejs-prog-model-context.html
- * @param {Object} context
- *
- * Return doc: https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-lambda-proxy-integrations.html
- * @returns {Object} object - API Gateway Lambda Proxy Output Format
- *
- */
-exports.handler = async (event, context) => {
-  const day = event.path === "/daily" ? TODAY : TOMORROW;
-
-  if (shouldReload(day)) {
-    retrievalTime[day] = new Date();
-    achievements[day] = await getAchievements(day);
-  }
-
-  const response = {
-    statusCode: 200,
-    headers: {
-      "content-type": "application/json",
-      "access-control-allow-origin": "*",
-    },
-    body: JSON.stringify(achievements[day]),
-  };
-
-  return response;
-};
-
-/**
- * Get list of achivements by combining GW2 API results with dailyDb
+ * Get list of achievements by combining GW2 API results with dailyDb
  */
 async function getAchievements(day) {
+  // Ensure dailyDb is loaded
+  if (!dailyDb) {
+    loadDailyDb();
+  }
+
   // Load list of daily achievements
   const daily = (await axios.get(gw2api[day])).data;
 
-  // Query achivement details
+  // Query achievement details
   const ids = Object.keys(daily)
     .map((key) => daily[key].map((a) => a.id))
     .flat();
@@ -95,14 +61,14 @@ async function getAchievements(day) {
 }
 
 /**
- * We should reload if there's no retrieval time or
- * the last retrieval time was a different date in UTC
+ * Load dailyDb from disk
  */
-function shouldReload(day) {
-  const now = new Date();
-  return (
-    !retrievalTime[day] ||
-    now.toISOString().substr(0, 10) !=
-      retrievalTime[day].toISOString().substr(0, 10)
-  );
+function loadDailyDb() {
+  const basePath = process.env.LAMBDA_TASK_ROOT || ".";
+  const dbPath = path.join(basePath, "dailydb.json");
+  dailyDb = JSON.parse(fs.readFileSync(dbPath, { encoding: "utf8" }));
 }
+
+module.exports = {
+  getAchievements,
+};

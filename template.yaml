@@ -14,18 +14,18 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       CodeUri: daily/
-      Handler: daily.handler
+      Handler: index.handler
       Runtime: nodejs12.x
       Events:
         today:
           Type: Api
           Properties:
-            Path: /daily
+            Path: /today
             Method: get
         tomorrow:
           Type: Api
           Properties:
-            Path: /daily/tomorrow
+            Path: /tomorrow
             Method: get
 
 Outputs:
