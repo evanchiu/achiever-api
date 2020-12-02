@@ -16,7 +16,7 @@ jobs:
       - name: SAM Build
         run: sam build
   test:
-    name: Test /daily
+    name: NPM Test
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

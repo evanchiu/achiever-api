@@ -6,7 +6,8 @@
   "license": "Apache-2.0",
   "files": [
     "*.js",
-    "dailydb.json"
+    "daily-db.json",
+    "fractal-db.json"
   ],
   "dependencies": {
     "axios": "0.21.0"

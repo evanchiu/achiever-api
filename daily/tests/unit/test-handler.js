@@ -3,15 +3,13 @@
 const lambda = require("../../index.js");
 const chai = require("chai");
 const expect = chai.expect;
-let context = {};
 let dailyResult = {};
 let tomorrowResult = {};
 
 describe("daily", function () {
   it("verifies successful /today response", async () => {
     const result = (dailyResult = await lambda.handler(
-      { path: "/today" },
-      context
+      { path: "/today" }
     ));
 
     expect(result).to.be.an("object");
@@ -22,13 +20,14 @@ describe("daily", function () {
 
     expect(response.daily).to.be.an("array");
     expect(response.strike).to.be.an("object");
+    expect(response.fractals).to.be.an("object");
     expect(response.daily.length).to.be.greaterThan(0);
   });
 
   it("verifies successful /today cached response", async () => {
-    await lambda.handler({ path: "/today" }, context);
+    await lambda.handler({ path: "/today" });
     const start = new Date();
-    const result = await lambda.handler({ path: "/today" }, context);
+    const result = await lambda.handler({ path: "/today" });
     const end = new Date();
 
     const elapsed = end.getTime() - start.getTime();
@@ -51,13 +50,14 @@ describe("daily", function () {
 
     expect(response.daily).to.be.an("array");
     expect(response.strike).to.be.an("object");
+    expect(response.fractals).to.be.an("object");
     expect(response.daily.length).to.be.greaterThan(0);
   });
 
   it("verifies successful /tomorrow cached response", async () => {
-    await lambda.handler({ path: "/tomorrow" }, context);
+    await lambda.handler({ path: "/tomorrow" });
     const start = new Date();
-    const result = await lambda.handler({ path: "/tomorrow" }, context);
+    const result = await lambda.handler({ path: "/tomorrow" });
     const end = new Date();
 
     const elapsed = end.getTime() - start.getTime();
