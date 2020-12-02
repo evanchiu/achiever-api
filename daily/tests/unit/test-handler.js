@@ -21,6 +21,7 @@ describe("daily", function () {
     let response = JSON.parse(result.body);
 
     expect(response.daily).to.be.an("array");
+    expect(response.strike).to.be.an("object");
     expect(response.daily.length).to.be.greaterThan(0);
   });
 
@@ -49,6 +50,7 @@ describe("daily", function () {
     let response = JSON.parse(result.body);
 
     expect(response.daily).to.be.an("array");
+    expect(response.strike).to.be.an("object");
     expect(response.daily.length).to.be.greaterThan(0);
   });
 
