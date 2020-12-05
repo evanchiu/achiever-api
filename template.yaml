@@ -17,6 +17,16 @@ Resources:
       Handler: index.handler
       Runtime: nodejs12.x
       Events:
+        oldToday:
+          Type: Api
+          Properties:
+            Path: /daily
+            Method: get
+        oldTomorrow:
+          Type: Api
+          Properties:
+            Path: /daily/tomorrow
+            Method: get
         today:
           Type: Api
           Properties:

@@ -1,7 +1,7 @@
 const days = require("./days");
 const daily = require("./daily");
 const strike = require("./strike");
-const fractal = require('./fractal');
+const fractal = require("./fractal");
 
 // global achievements and retrieval times
 const retrievalTime = {};
@@ -22,21 +22,39 @@ responses[days.TOMORROW] = false;
  *
  */
 exports.handler = async (event) => {
-  const day = event.path === "/today" ? days.TODAY : days.TOMORROW;
+  const day =
+    event.path === "/today" || event.path === "/daily"
+      ? days.TODAY
+      : days.TOMORROW;
 
   if (shouldReload(day)) {
     retrievalTime[day] = new Date();
     responses[day] = await getResponses(day);
   }
 
-  return {
-    statusCode: 200,
-    headers: {
-      "content-type": "application/json",
-      "access-control-allow-origin": "*",
-    },
-    body: JSON.stringify(responses[day]),
-  };
+  // new endpoints
+  if (event.path === "/today" || event.path === "/tomorrow") {
+    return {
+      statusCode: 200,
+      headers: {
+        "content-type": "application/json",
+        "access-control-allow-origin": "*",
+      },
+      body: JSON.stringify(responses[day]),
+    };
+  }
+
+  // old endpoints
+  if (event.path === "/daily" || event.path === "/daily/tomorrow") {
+    return {
+      statusCode: 200,
+      headers: {
+        "content-type": "application/json",
+        "access-control-allow-origin": "*",
+      },
+      body: JSON.stringify(responses[day].daily),
+    };
+  }
 };
 
 /**
@@ -49,7 +67,7 @@ async function getResponses(day) {
   return {
     daily: dailyAchievements,
     strike: dailyStrike,
-    fractals: dailyFractals
+    fractals: dailyFractals,
   };
 }
 
