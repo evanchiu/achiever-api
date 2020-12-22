@@ -10,7 +10,7 @@
     "fractal-db.json"
   ],
   "dependencies": {
-    "axios": "0.21.0"
+    "axios": "0.21.1"
   },
   "scripts": {
     "test": "mocha tests/unit/"
