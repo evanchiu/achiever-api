@@ -121,6 +121,7 @@
     "id": 1856,
     "name": "Daily PvP Reward Earner",
     "criterion": "Earn one reward from a PvP reward track",
+    "assumption": "Consume two potions of PvP Reward",
     "minutes": 1
   },
   "1857": {
