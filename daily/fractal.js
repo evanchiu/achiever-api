@@ -24,7 +24,7 @@ async function getFractals(dailyAchievements) {
 
   // Get names of the daily fractals from their Daily Tier 1 achievements
   const dailyFractalNames = dailyAchievements
-    .filter((a) => a.name.match(/Daily Tier 1/))
+    .filter((a) => a.name && a.name.match(/Daily Tier 1/))
     .map((a) => a.name.replace("Daily Tier 1 ", ""));
 
   // Add in the scales they're available on
@@ -37,7 +37,7 @@ async function getFractals(dailyAchievements) {
 
   // Get the scales of recommended fractals
   const recommendedFractalScales = dailyAchievements
-    .filter((a) => a.name.match(/Daily Recommended Fractal/))
+    .filter((a) => a.name && a.name.match(/Daily Recommended Fractal/))
     .map((a) =>
       parseInt(a.name.replace("Daily Recommended Fractal—Scale ", ""))
     );
