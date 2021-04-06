@@ -5,9 +5,17 @@ const msPerWeek = msPerDay * 7;
 
 // Strike is based on modulus of days since baseline
 // https://wiki.guildwars2.com/index.php?title=Template:Daily_Strike_Mission&action=edit
-const STRIKE_BASELINE_DATE = new Date("2020/05/26 00:00 UTC");
+const STRIKE_BASELINE_DATE = new Date("2021/04/01 00:00 UTC");
 
 const STRIKES = [
+  {
+    priority_strike: "Fraenir of Jormag",
+    strike_mission: "Fraenir of Jormag",
+  },
+  {
+    priority_strike: "Shiverpeaks Pass",
+    strike_mission: "Shiverpeaks Pass",
+  },
   {
     priority_strike: "Voice of the Fallen and Claw of the Fallen",
     strike_mission: "Voice of the Fallen and Claw of the Fallen",
@@ -23,14 +31,6 @@ const STRIKES = [
   {
     priority_strike: "Cold War",
     strike_mission: "Cold War",
-  },
-  {
-    priority_strike: "Fraenir of Jormag",
-    strike_mission: "Fraenir of Jormag",
-  },
-  {
-    priority_strike: "Shiverpeaks Pass",
-    strike_mission: "Shiverpeaks Pass",
   },
 ];
 
@@ -65,11 +65,13 @@ async function getStrike(day) {
 
   const msSinceStrikeBaseline =
     referenceDate.getTime() - STRIKE_BASELINE_DATE.getTime();
-  const strikeIndex = Math.floor(msSinceStrikeBaseline / msPerDay) % STRIKES.length;
+  const strikeIndex =
+    Math.floor(msSinceStrikeBaseline / msPerDay) % STRIKES.length;
 
   const msSinceChestBaseline =
     referenceDate.getTime() - EMISSARY_BASELINE_DATE.getTime();
-  const chestIndex = Math.floor(msSinceChestBaseline / msPerWeek) % EMISSARY_CHESTS.length;
+  const chestIndex =
+    Math.floor(msSinceChestBaseline / msPerWeek) % EMISSARY_CHESTS.length;
 
   return {
     strike: STRIKES[strikeIndex],
