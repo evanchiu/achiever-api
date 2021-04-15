@@ -5,7 +5,7 @@ const msPerWeek = msPerDay * 7;
 
 // Strike is based on modulus of days since baseline
 // https://wiki.guildwars2.com/index.php?title=Template:Daily_Strike_Mission&action=edit
-const STRIKE_BASELINE_DATE = new Date("2021/04/01 00:00 UTC");
+const STRIKE_BASELINE_DATE = new Date("2021/03/31 00:00 UTC");
 
 const STRIKES = [
   {
