@@ -62,7 +62,7 @@ exports.handler = async (event) => {
  */
 async function getResponses(day) {
   const dailyAchievements = await daily.getAchievements(day);
-  const dailyStrike = await strike.getStrike(day);
+  const dailyStrike = strike.getStrike(day);
   const dailyFractals = await fractal.getFractals(dailyAchievements);
   return {
     daily: dailyAchievements,

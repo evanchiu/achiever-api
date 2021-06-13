@@ -5,7 +5,7 @@ const msPerWeek = msPerDay * 7;
 
 // Strike is based on modulus of days since baseline
 // https://wiki.guildwars2.com/index.php?title=Template:Daily_Strike_Mission&action=edit
-const STRIKE_BASELINE_DATE = new Date("2021/03/31 00:00 UTC");
+const STRIKE_BASELINE_DATE = new Date("2021/04/01 00:00 UTC");
 
 const STRIKES = [
   {
@@ -56,13 +56,17 @@ const EMISSARY_CHESTS = [
 /**
  * Calculate the day's strikes
  */
-async function getStrike(day) {
+function getStrike(day) {
   // Set reference date for today or tomorrow
   let referenceDate = new Date();
   if (day != days.TODAY) {
     referenceDate = new Date(referenceDate.getTime() + msPerDay);
   }
 
+  return getStrikeForDate(referenceDate);
+}
+
+function getStrikeForDate(referenceDate) {
   const msSinceStrikeBaseline =
     referenceDate.getTime() - STRIKE_BASELINE_DATE.getTime();
   const strikeIndex =
@@ -81,4 +85,5 @@ async function getStrike(day) {
 
 module.exports = {
   getStrike,
+  getStrikeForDate,
 };
