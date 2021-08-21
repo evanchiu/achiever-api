@@ -2,6 +2,7 @@ const days = require("./days");
 const daily = require("./daily");
 const strike = require("./strike");
 const fractal = require("./fractal");
+const { getRaidUploadLinks } = require("./reports");
 
 // global achievements and retrieval times
 const retrievalTime = {};
@@ -33,23 +34,29 @@ exports.handler = async (event) => {
       retrievalTime[day] = new Date();
       responses[day] = await getResponses(day);
     }
-    return {
-      statusCode: 200,
-      headers: {
-        "content-type": "application/json",
-        "access-control-allow-origin": "*",
-      },
-      body: JSON.stringify(responses[day]),
-    };
+    return out(200, responses[day]);
+
+    // Raid Report Endpoint
+  } else if (event.path.startsWith("/raid-report/")) {
+    console.log(`handling ${event.path}`);
+    const segments = event.path.split("/");
+    if (segments.length != 4) {
+      return out(400, {
+        error: "Use path /raid-report/<gw2 api token>/<dps.reports token>",
+      });
+    } else {
+      const gw2Token = segments[2];
+      const dpsReportToken = segments[3];
+      try {
+        const uploads = await getRaidUploadLinks(gw2Token, dpsReportToken);
+        return out(200, uploads);
+      } catch (e) {
+        console.log(e);
+        return out(502, { error: e.message });
+      }
+    }
   } else {
-    return {
-      statusCode: 404,
-      headers: {
-        "content-type": "application/json",
-        "access-control-allow-origin": "*",
-      },
-      body: JSON.stringify({ message: "404" }),
-    };
+    return out(400, { message: "404" });
   }
 };
 
@@ -78,4 +85,18 @@ function shouldReload(day) {
     now.toISOString().substr(0, 10) !=
       retrievalTime[day].toISOString().substr(0, 10)
   );
+}
+
+/**
+ * Build lambda response output
+ */
+function out(statusCode, bodyObject) {
+  return {
+    statusCode: statusCode,
+    headers: {
+      "content-type": "application/json",
+      "access-control-allow-origin": "*",
+    },
+    body: JSON.stringify(bodyObject),
+  };
 }

@@ -24,4 +24,7 @@ jobs:
       - name: NPM ci
         run: cd api && npm ci
       - name: NPM Test
+        env:
+          DPS_REPORTS_TOKEN: ${{ secrets.DPS_REPORTS_TOKEN }}
+          GW2_TOKEN: ${{ secrets.GW2_TOKEN }}
         run: cd api && npm test
