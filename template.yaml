@@ -17,15 +17,10 @@ Resources:
       Handler: index.handler
       Runtime: nodejs12.x
       Events:
-        today:
+        getProxy:
           Type: Api
           Properties:
-            Path: /today
-            Method: get
-        tomorrow:
-          Type: Api
-          Properties:
-            Path: /tomorrow
+            Path: '/{proxy+}'
             Method: get
 
 Outputs:
