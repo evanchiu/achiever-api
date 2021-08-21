@@ -7,26 +7,16 @@ Description: >
 
 Globals:
   Function:
-    Timeout: 3
+    Timeout: 10
 
 Resources:
-  DailyFunction:
+  ApiFunction:
     Type: AWS::Serverless::Function
     Properties:
-      CodeUri: daily/
+      CodeUri: api/
       Handler: index.handler
       Runtime: nodejs12.x
       Events:
-        oldToday:
-          Type: Api
-          Properties:
-            Path: /daily
-            Method: get
-        oldTomorrow:
-          Type: Api
-          Properties:
-            Path: /daily/tomorrow
-            Method: get
         today:
           Type: Api
           Properties:
@@ -39,12 +29,12 @@ Resources:
             Method: get
 
 Outputs:
-  DailyApi:
-    Description: "API Gateway endpoint URL for Prod stage for Daily function"
+  Api:
+    Description: "API Gateway endpoint URL for Prod stage for API function"
     Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/"
-  DailyFunction:
-    Description: "Daily Lambda Function ARN"
-    Value: !GetAtt DailyFunction.Arn
-  DailyFunctionIamRole:
-    Description: "Implicit IAM Role created for Daily function"
-    Value: !GetAtt DailyFunctionRole.Arn
+  ApiFunction:
+    Description: "Lambda Function ARN"
+    Value: !GetAtt ApiFunction.Arn
+  ApiFunctionRole :
+    Description: "Implicit IAM Role created for API function"
+    Value: !GetAtt ApiFunctionRole.Arn

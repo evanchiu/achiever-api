@@ -22,18 +22,17 @@ responses[days.TOMORROW] = false;
  *
  */
 exports.handler = async (event) => {
-  const day =
-    event.path === "/today" || event.path === "/daily"
-      ? days.TODAY
-      : days.TOMORROW;
-
-  if (shouldReload(day)) {
-    retrievalTime[day] = new Date();
-    responses[day] = await getResponses(day);
-  }
-
-  // new endpoints
+  // daily endpoints
   if (event.path === "/today" || event.path === "/tomorrow") {
+    const day =
+      event.path === "/today" || event.path === "/daily"
+        ? days.TODAY
+        : days.TOMORROW;
+
+    if (shouldReload(day)) {
+      retrievalTime[day] = new Date();
+      responses[day] = await getResponses(day);
+    }
     return {
       statusCode: 200,
       headers: {
@@ -42,17 +41,14 @@ exports.handler = async (event) => {
       },
       body: JSON.stringify(responses[day]),
     };
-  }
-
-  // old endpoints
-  if (event.path === "/daily" || event.path === "/daily/tomorrow") {
+  } else {
     return {
-      statusCode: 200,
+      statusCode: 404,
       headers: {
         "content-type": "application/json",
         "access-control-allow-origin": "*",
       },
-      body: JSON.stringify(responses[day].daily),
+      body: JSON.stringify({ message: "404" }),
     };
   }
 };

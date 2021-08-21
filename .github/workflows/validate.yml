@@ -2,7 +2,7 @@ name: Validate
 on:
   push:
     branches-ignore:
-      - master
+      - main
 
 jobs:
   build:
@@ -12,7 +12,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: NPM ci
-        run: cd daily && npm ci
+        run: cd api && npm ci
       - name: SAM Build
         run: sam build
   test:
@@ -22,6 +22,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: NPM ci
-        run: cd daily && npm ci
+        run: cd api && npm ci
       - name: NPM Test
-        run: cd daily && npm test
+        run: cd api && npm test
