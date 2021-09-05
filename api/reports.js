@@ -8,7 +8,7 @@ const RAID_BOSSES = new Set([
   "Matthias Gabrel",
   "Keep Construct",
   "Xera",
-  "Cairn",
+  "Cairn the Indomitable",
   "Mursaat Overseer",
   "Samarog",
   "Deimos",
