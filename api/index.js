@@ -37,12 +37,12 @@ exports.handler = async (event) => {
     return out(200, responses[day]);
 
     // Raid Report Endpoint
-  } else if (event.path.startsWith("/raid-report/")) {
+  } else if (event.path.startsWith("/raid-reports/")) {
     console.log(`handling ${event.path}`);
     const segments = event.path.split("/");
     if (segments.length != 4) {
       return out(400, {
-        error: "Use path /raid-report/<gw2 api token>/<dps.reports token>",
+        error: "Use path /raid-reports/<gw2 api token>/<dps.reports token>",
       });
     } else {
       const gw2Token = segments[2];

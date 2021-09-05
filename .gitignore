@@ -130,3 +130,6 @@ $RECYCLE.BIN/
 
 # sam-generated artifacts
 .aws-sam
+
+# test event with tokens in the path
+events/reports.json
