@@ -23,48 +23,70 @@ const RAID_BOSSES = new Set([
 ]);
 
 /**
- * Gets the uploads from dps.report, returns a map of encounter times to upload metadata
+ * Gets the uploads from dps.report,
+ * filters for successful encounters against the given boss set,
+ * returns a map of encounter times to upload metadata
  */
-async function getUploads(accountName, token, bossSet, page = 1) {
-  // Get uploads for this page
+async function getUploads(token, bossSet) {
+  // Get uploads for the first page
   let data;
+  let responses;
   try {
     const response = await axios.get(
-      `https://dps.report/getUploads?userToken=${token}&page=${page}`
+      `https://dps.report/getUploads?userToken=${token}&page=1`
     );
     data = response.data;
+    responses = [response];
   } catch (e) {
     throw new Error("Error reading from dps.report", { cause: e });
   }
 
-  // If this isn't the last page, pull the next page
-  let moreUploadsPromise = null;
-  if (page < data.pages) {
-    moreUploadsPromise = getUploads(accountName, token, bossSet, page + 1);
+  // If there are other pages, parallel fetch the rest
+  if (data.pages > 1) {
+    try {
+      const pagePromises = [];
+      for (let i = 2; i < data.pages; i++) {
+        pagePromises.push(
+          axios.get(
+            `https://dps.report/getUploads?userToken=${token}&page=${i}`
+          )
+        );
+      }
+      responses.push(...(await Promise.all(pagePromises)));
+    } catch (e) {
+      throw new Error("Error reading from dps.report", { cause: e });
+    }
   }
 
   // Make a map of encounterTime => upload
   const uploads = {};
-  for (const upload of data.uploads) {
-    // if it's a success, it's a boss in the set, and the player participated
-    if (
-      upload.encounter.success &&
-      bossSet.has(upload.encounter.boss) &&
-      Object.values(upload.players).some(
-        (player) => player.display_name === accountName
-      )
-    ) {
-      uploads[upload.encounterTime] = upload;
+  for (const response of responses) {
+    for (const upload of response.data.uploads) {
+      // if it's a success and it's a boss in the set
+      if (upload.encounter.success && bossSet.has(upload.encounter.boss)) {
+        uploads[upload.encounterTime] = upload;
+      }
     }
   }
 
-  // If there are more uploads, await their results and combine
-  if (moreUploadsPromise) {
-    const moreUploads = await moreUploadsPromise;
-    Object.assign(uploads, moreUploads);
-  }
-
   return uploads;
+}
+
+/**
+ * Fetches the account name via the GW2 API
+ */
+async function getAccountName(token) {
+  // Get account name from GW2 API https://wiki.guildwars2.com/wiki/API:2/account
+  let accountName = "";
+  try {
+    const response = await axios.get(
+      `https://api.guildwars2.com/v2/account?access_token=${token}`
+    );
+    accountName = response.data.name;
+  } catch (e) {
+    throw new Error("Error reading from GW2 API", { cause: e });
+  }
+  return accountName;
 }
 
 /**
@@ -72,22 +94,20 @@ async function getUploads(accountName, token, bossSet, page = 1) {
  * token in which the given accountName participated
  */
 async function getRaidUploadLinks(gw2Token, dpsReportToken) {
-  // Get account name from GW2 API https://wiki.guildwars2.com/wiki/API:2/account
-  let accountName = "";
-  try {
-    const response = await axios.get(
-      `https://api.guildwars2.com/v2/account?access_token=${gw2Token}`
-    );
-    accountName = response.data.name;
-  } catch (e) {
-    throw new Error("Error reading from GW2 API", { cause: e });
-  }
+  // Parallel fetch account name and uploads
+  const [accountName, uploads] = await Promise.all([
+    getAccountName(gw2Token),
+    getUploads(dpsReportToken, RAID_BOSSES),
+  ]);
 
-  // Get uploads
-  const uploads = await getUploads(accountName, dpsReportToken, RAID_BOSSES);
-
-  // Map to just the permalinks
-  return Object.values(uploads).map((upload) => upload.permalink);
+  // Filter for uploads the account participated in, map to just the permalinks
+  return Object.values(uploads)
+    .filter((upload) =>
+      Object.values(upload.players).some(
+        (player) => player.display_name === accountName
+      )
+    )
+    .map((upload) => upload.permalink);
 }
 
 module.exports = {
