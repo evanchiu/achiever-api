@@ -46,14 +46,14 @@ https://achiever-api.roxtar.co/tomorrow
     ...
   ],
   "strike": {
-    "strike": {
-      "priority_strike": "Fraenir of Jormag",
-      "strike_mission": "Fraenir of Jormag"
+    strike: {
+      priority_strike: "Boneskinner",
+      strike_mission: "Boneskinner",
     },
-    "emissary_chest": {
-      "chest": "Vigil Emissary Chest",
-      "prophet_crystal": "blue"
-    }
+    cantha_strike: {
+      priority_strike: "Harvest Temple",
+      strike_mission: "Harvest Temple",
+    },
   },
   "fractals": {
     "daily": [

@@ -1,13 +1,20 @@
 const days = require("./days");
 
 const msPerDay = 1000 * 60 * 60 * 24;
-const msPerWeek = msPerDay * 7;
 
 // Strike is based on modulus of days since baseline
 // https://wiki.guildwars2.com/index.php?title=Template:Daily_Strike_Mission&action=edit
-const STRIKE_BASELINE_DATE = new Date("2021/04/01 00:00 UTC");
+const STRIKE_BASELINE_DATE = new Date("2022/02/28 00:00 UTC");
 
 const STRIKES = [
+  {
+    priority_strike: "Boneskinner",
+    strike_mission: "Boneskinner",
+  },
+  {
+    priority_strike: "Cold War",
+    strike_mission: "Cold War",
+  },
   {
     priority_strike: "Fraenir of Jormag",
     strike_mission: "Fraenir of Jormag",
@@ -24,32 +31,24 @@ const STRIKES = [
     priority_strike: "Voice in the Frozen Deep",
     strike_mission: "Whisper of Jormag",
   },
-  {
-    priority_strike: "Boneskinner",
-    strike_mission: "Boneskinner",
-  },
-  {
-    priority_strike: "Cold War",
-    strike_mission: "Cold War",
-  },
 ];
 
-// Emissary chest is based on modulus of days since baseline
-// https://wiki.guildwars2.com/index.php?title=Template:Emissary%20chests%20rotation&action=edit
-const EMISSARY_BASELINE_DATE = new Date("March 16, 2020 07:30 UTC");
-
-const EMISSARY_CHESTS = [
+const CANTHA_STRIKES = [
   {
-    chest: "Priory Emissary Chest",
-    prophet_crystal: "green",
+    priority_strike: "Harvest Temple",
+    strike_mission: "Harvest Temple",
   },
   {
-    chest: "Vigil Emissary Chest",
-    prophet_crystal: "blue",
+    priority_strike: "Aetherblade Hideout",
+    strike_mission: "Aetherblade Hideout",
   },
   {
-    chest: "Whispers Emissary Chest",
-    prophet_crystal: "red",
+    priority_strike: "Xunlai Jade Junkyard",
+    strike_mission: "Xunlai Jade Junkyard",
+  },
+  {
+    priority_strike: "Kaineng Overlook",
+    strike_mission: "Kaineng Overlook",
   },
 ];
 
@@ -71,15 +70,12 @@ function getStrikeForDate(referenceDate) {
     referenceDate.getTime() - STRIKE_BASELINE_DATE.getTime();
   const strikeIndex =
     Math.floor(msSinceStrikeBaseline / msPerDay) % STRIKES.length;
-
-  const msSinceChestBaseline =
-    referenceDate.getTime() - EMISSARY_BASELINE_DATE.getTime();
-  const chestIndex =
-    Math.floor(msSinceChestBaseline / msPerWeek) % EMISSARY_CHESTS.length;
+  const canthaStrikeIndex =
+    Math.floor(msSinceStrikeBaseline / msPerDay) % CANTHA_STRIKES.length;
 
   return {
     strike: STRIKES[strikeIndex],
-    emissary_chest: EMISSARY_CHESTS[chestIndex],
+    cantha_strike: CANTHA_STRIKES[canthaStrikeIndex]
   };
 }
 

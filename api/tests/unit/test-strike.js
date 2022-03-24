@@ -5,15 +5,15 @@ const chai = require("chai");
 const expect = chai.expect;
 
 // Hardcode expected values for the current date
-const benchmarkDate = new Date("Sun Jun 13 14:05:00 EDT 2021");
+const benchmarkDate = new Date("Wed Mar 23 23:15:57 EDT 2022");
 const benchmarkStrike = {
   strike: {
-    priority_strike: "Shiverpeaks Pass",
-    strike_mission: "Shiverpeaks Pass",
+    priority_strike: "Boneskinner",
+    strike_mission: "Boneskinner",
   },
-  emissary_chest: {
-    chest: "Vigil Emissary Chest",
-    prophet_crystal: "blue",
+  cantha_strike: {
+    priority_strike: "Harvest Temple",
+    strike_mission: "Harvest Temple",
   },
 };
 
