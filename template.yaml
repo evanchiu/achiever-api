@@ -15,7 +15,7 @@ Resources:
     Properties:
       CodeUri: api/
       Handler: index.handler
-      Runtime: nodejs12.x
+      Runtime: nodejs16.x
       Events:
         getProxy:
           Type: Api
