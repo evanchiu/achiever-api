@@ -39,6 +39,10 @@ const CANTHA_STRIKES = [
     strike_mission: "Harvest Temple",
   },
   {
+    priority_strike: "Old Lion's Court",
+    strike_mission: "Old Lion's Court",
+  },
+  {
     priority_strike: "Aetherblade Hideout",
     strike_mission: "Aetherblade Hideout",
   },
