@@ -1404,7 +1404,7 @@
     "id": 2937,
     "name": "Daily Heart of Maguuma Lumberer",
     "criterion": "Log ten resources",
-    "minutes": 5
+    "minutes": 2
   },
   "2938": {
     "id": 2938,
@@ -1434,7 +1434,7 @@
     "id": 2957,
     "name": "Daily Heart of Maguuma Miner",
     "criterion": "Mine ten resources",
-    "minutes": 5
+    "minutes": 2
   },
   "2959": {
     "id": 2959,
