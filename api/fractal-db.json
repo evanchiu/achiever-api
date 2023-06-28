@@ -81,7 +81,7 @@
   },
   {
     "level": 17,
-    "fractal": "Swampland",
+    "fractal": "Molten Furnace",
     "ar": 0
   },
   {
@@ -106,22 +106,22 @@
   },
   {
     "level": 22,
-    "fractal": "Molten Furnace",
+    "fractal": "Nightmare",
     "ar": 11
   },
   {
     "level": 23,
-    "fractal": "Nightmare",
+    "fractal": "Shattered Observatory",
     "ar": 13
   },
   {
     "level": 24,
-    "fractal": "Shattered Observatory",
+    "fractal": "Sunqua Peak",
     "ar": 15
   },
   {
     "level": 25,
-    "fractal": "Sunqua Peak",
+    "fractal": "Silent Surf",
     "ar": 17
   },
   {
@@ -216,37 +216,37 @@
   },
   {
     "level": 44,
-    "fractal": "Uncategorized",
+    "fractal": "Solid Ocean",
     "ar": 50
   },
   {
     "level": 45,
-    "fractal": "Solid Ocean",
+    "fractal": "Aetherblade",
     "ar": 52
   },
   {
     "level": 46,
-    "fractal": "Aetherblade",
+    "fractal": "Cliffside",
     "ar": 54
   },
   {
     "level": 47,
-    "fractal": "Cliffside",
+    "fractal": "Nightmare",
     "ar": 56
   },
   {
     "level": 48,
-    "fractal": "Nightmare",
+    "fractal": "Shattered Observatory",
     "ar": 58
   },
   {
     "level": 49,
-    "fractal": "Shattered Observatory",
+    "fractal": "Sunqua Peak",
     "ar": 59
   },
   {
     "level": 50,
-    "fractal": "Sunqua Peak",
+    "fractal": "Silent Surf",
     "ar": 61
   },
   {
@@ -336,42 +336,42 @@
   },
   {
     "level": 68,
-    "fractal": "Snowblind",
+    "fractal": "Cliffside",
     "ar": 93
   },
   {
     "level": 69,
-    "fractal": "Cliffside",
+    "fractal": "Molten Boss",
     "ar": 95
   },
   {
     "level": 70,
-    "fractal": "Molten Boss",
+    "fractal": "Aetherblade",
     "ar": 97
   },
   {
     "level": 71,
-    "fractal": "Aetherblade",
+    "fractal": "Captain Mai Trin Boss",
     "ar": 99
   },
   {
     "level": 72,
-    "fractal": "Captain Mai Trin Boss",
+    "fractal": "Nightmare",
     "ar": 100
   },
   {
     "level": 73,
-    "fractal": "Nightmare",
+    "fractal": "Shattered Observatory",
     "ar": 102
   },
   {
     "level": 74,
-    "fractal": "Shattered Observatory",
+    "fractal": "Sunqua Peak",
     "ar": 104
   },
   {
     "level": 75,
-    "fractal": "Sunqua Peak",
+    "fractal": "Silent Surf",
     "ar": 106
   },
   {
@@ -481,22 +481,22 @@
   },
   {
     "level": 97,
-    "fractal": "Chaos",
+    "fractal": "Nightmare",
     "ar": 145
   },
   {
     "level": 98,
-    "fractal": "Nightmare",
+    "fractal": "Shattered Observatory",
     "ar": 147
   },
   {
     "level": 99,
-    "fractal": "Shattered Observatory",
+    "fractal": "Sunqua Peak",
     "ar": 148
   },
   {
     "level": 100,
-    "fractal": "Sunqua Peak",
+    "fractal": "Silent Surf",
     "ar": 150
   }
 ]
