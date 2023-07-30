@@ -4,9 +4,9 @@ Augmented Guild Wars 2 APIs to support https://achiever.roxtar.co
 
 ## Endpoints
 
-https://achiever-api.roxtar.co/today
-
-https://achiever-api.roxtar.co/tomorrow
+- https://achiever-api.roxtar.co/today
+- https://achiever-api.roxtar.co/tomorrow
+- https://achiever-api.roxtar.co/daily/YYYY-MM-DD
 
 ## Sample Response
 

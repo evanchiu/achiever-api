@@ -13,6 +13,8 @@ const responses = {};
 responses[days.TODAY] = false;
 responses[days.TOMORROW] = false;
 
+const cacheByDate = {};
+
 /**
  *
  * Event doc: https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-lambda-proxy-integrations.html#api-gateway-simple-proxy-for-lambda-input-format
@@ -23,8 +25,10 @@ responses[days.TOMORROW] = false;
  *
  */
 exports.handler = async (event) => {
-  // daily endpoints
+  console.log("processing", event);
+
   if (event.path === "/today" || event.path === "/tomorrow") {
+    // daily endpoints
     const day =
       event.path === "/today" || event.path === "/daily"
         ? days.TODAY
@@ -35,9 +39,29 @@ exports.handler = async (event) => {
       responses[day] = await getResponses(day);
     }
     return out(200, responses[day]);
-
+  } else if (event.source === "aws.events") {
+    // Scheduled event, go calculate and save tomorrow's data
+    const tomorrowData = await getResponses(days.TOMORROW);
+    const tomorrow = new Date(new Date().getTime() + 24 * 60 * 60 * 1000);
+    const tomorrowDate = tomorrow.toISOString().substring(0, 10);
+    const response = await save(tomorrowDate, tomorrowData);
+    console.log(`Saved data for ${tomorrowDate}`, tomorrowData);
+  } else if (event.path && event.path.startsWith("/daily/")) {
+    // Daily endpoint for a particular day
+    const date = event.path.split("/").pop();
+    if (!date.match(/\d{4}-\d{2}-\d{2}/)) {
+      return out(400, { message: `Invalid date format, expecting YYYY-MM-DD` });
+    }
+    try {
+      const data = await load(date);
+      console.log(`Serving item for ${date}`, data);
+      return out(200, data);
+    } catch (e) {
+      console.log(`Error loading for date ${date}`, e);
+      return out(404, { error: "Date not found" });
+    }
+  } else if (event.path && event.path.startsWith("/raid-reports/")) {
     // Raid Report Endpoint
-  } else if (event.path.startsWith("/raid-reports/")) {
     console.log(`handling ${event.path}`);
     const segments = event.path.split("/");
     if (segments.length != 4) {
@@ -56,7 +80,8 @@ exports.handler = async (event) => {
       }
     }
   } else {
-    return out(400, { message: "404" });
+    // Unrecognized event
+    return out(404, { message: "404" });
   }
 };
 
@@ -85,6 +110,50 @@ function shouldReload(day) {
     now.toISOString().substr(0, 10) !=
       retrievalTime[day].toISOString().substr(0, 10)
   );
+}
+
+/**
+ * Store the given daily data under the given date
+ */
+async function save(date, data) {
+  const aws = require("aws-sdk");
+  const doc = new aws.DynamoDB.DocumentClient();
+
+  const params = {
+    TableName: process.env.DAILY_TABLE,
+    Item: {
+      id: date,
+      data,
+    },
+  };
+
+  return doc.put(params).promise();
+}
+
+/**
+ * Fetch the daily data for the given date
+ */
+async function load(date) {
+  // Serve from cache if possible
+  if (cacheByDate[date]) {
+    return cacheByDate[date];
+  }
+
+  const aws = require("aws-sdk");
+  const doc = new aws.DynamoDB.DocumentClient();
+
+  const params = {
+    TableName: process.env.DAILY_TABLE,
+    Key: {
+      id: date,
+    },
+  };
+
+  const response = await doc.get(params).promise();
+  const data = response.Item.data;
+  cacheByDate[date] = data;
+
+  return data;
 }
 
 /**
