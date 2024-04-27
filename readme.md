@@ -4,9 +4,9 @@ Augmented Guild Wars 2 APIs to support https://achiever.roxtar.co
 
 ## Endpoints
 
-- https://achiever-api.roxtar.co/today
-- https://achiever-api.roxtar.co/tomorrow
-- https://achiever-api.roxtar.co/daily/YYYY-MM-DD
+- https://achiever-api.roxtar.co/raid-reports/<gw2 api token>/<dps.report token>
+
+The response is an array of strings, where each string is a link to 
 
 ## Sample Response
 
