@@ -15,28 +15,13 @@ Resources:
     Properties:
       CodeUri: api/
       Handler: index.handler
-      Runtime: nodejs16.x
-      Policies:
-        - DynamoDBCrudPolicy:
-            TableName:
-              Ref: DailyTable
-      Environment:
-        Variables:
-          DAILY_TABLE:
-            Ref: DailyTable
+      Runtime: nodejs20.x
       Events:
         GetProxy:
           Type: Api
           Properties:
             Path: '/{proxy+}'
             Method: get
-        LoadScheduledEvent:
-          Type: Schedule
-          Name: LoadDaily
-          Properties:
-            Schedule: cron(01 00 * * ? *)
-  DailyTable:
-    Type: AWS::Serverless::SimpleTable
 
 Outputs:
   Api:
