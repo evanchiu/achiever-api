@@ -20,6 +20,13 @@ const RAID_BOSSES = new Set([
   "Cardinal Adina",
   "Cardinal Sabir",
   "Qadim the Peerless",
+  "Greer, the Blightbringer",
+  "Decima, the Stormsinger",
+  "Ura, the Steamshrieker",
+  "Greer",
+  "Decima",
+  "Ura",
+  "DPS.Report",
 ]);
 
 /**
