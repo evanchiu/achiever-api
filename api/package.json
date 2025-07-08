@@ -16,7 +16,7 @@
     "test": "mocha tests/unit/"
   },
   "devDependencies": {
-    "chai": "5.2.0",
+    "chai": "5.2.1",
     "mocha": "11.7.1"
   }
 }
